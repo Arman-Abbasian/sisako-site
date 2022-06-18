@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../build/tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+<body dir="rtl" class="font-samim">
+    <div class="grid grid-cols-1 xl:grid-cols-2 justify-center items-center gap-4">
+        <!--unit introduction-->
+            <div class="container mx-auto max-w-2xl p-2" x-data="{showcart:1}">
+                <div class="flex bg-blue-600 p-1 rounded-md overflow-hidden mb-2">
+                    <p @click="showcart =1"  class="flex-1 flex justify-center items-center p-3  text-white cursor-pointer hover:bg-blue-300 hover:text-blue-900 hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">قالب سازی</p>
+                    <p @click="showcart =2"  class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-blue-300 hover:text-blue-900 hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">پرسکاری</p>
+                    <p @click="showcart =3"  class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-blue-300 hover:text-blue-900 hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">مونتاژ</p>
+                </div>
+                <div>
+                    <div>
+                        <div x-cloak x-show="showcart===1" class="p-2 shadow-md shadow-slate-600 rounded-md sm:grid sm:grid-cols-2 sm:gap-x-4 ">
+                            <img src="../images/4.png" class="aspect-video w-40 float-right rounded-md ml-2 sm:w-full h-full" alt="sisako">
+                            <p>مجموعه ی قالب سازی شرکت سیمین صنعت کوشا دارای قدمتی طولانی نیست و این مجموعه از آغاز بر آن بوده که دانش فنی خود را ارتقا دهد و در این راستا سرمایه گذاری های بسیاری کرده است. مجموعه ی قالب سازی شرکت سیمین صنعت کوشا با سال ها تجربه در زمینه قالب سازی آماده ارائه قالب های سفارشی با بهترین کیفیت و قیمت است و دراین راستا تلاش بسیاری برای حضور در عرصه رقابت و ارتباط با دیگر رقبا داشته است
+                                ین شرکت جزو قدیمی ترین شرکت ها در منطقه در زمینه قاب سازی است و دارای سال ها تجربه در این زمینه است.
+                            </p>
+                        </div>
+            
+                        <div x-cloak x-show="showcart===2" class="p-2 shadow-md shadow-slate-600 rounded-md sm:grid sm:grid-cols-2 sm:gap-x-4">
+                            <img src="../images/5.jpg" class="aspect-video w-40 float-right rounded-md ml-2 sm:w-full h-full" alt="sisako">
+                            <p>مجموعه ی پرسکاری شرکت سیمین صنعت کوشا دارای قدمتی طولانی نیست و این مجموعه از آغاز بر آن بوده که دانش فنی خود را ارتقا دهد و در این راستا سرمایه گذاری های بسیاری کرده است. مجموعه ی قالب سازی شرکت سیمین صنعت کوشا با سال ها تجربه در زمینه قالب سازی آماده ارائه قالب های سفارشی با بهترین کیفیت و قیمت است و دراین راستا تلاش بسیاری برای حضور در عرصه رقابت و ارتباط با دیگر رقبا داشته است
+                                این شرکت جزو قدیمی ترین شرکت ها در منطقه در زمینه پرسکاری است و دارای سال ها تجربه در این زمینه است.
+                            </p>
+                        </div>
+        
+                        <div x-cloak x-show="showcart===3" class="p-2 shadow-md shadow-slate-600 rounded-md sm:grid sm:grid-cols-2 sm:gap-x-4">
+                            <img src="../images/6.jpg" class="aspect-video w-40 float-right rounded-md ml-2 sm:w-full h-full" alt="sisako">
+                            <p>مجموعه ی مونتاژ شرکت سیمین صنعت کوشا دارای قدمتی طولانی نیست و این مجموعه از آغاز بر آن بوده که دانش فنی خود را ارتقا دهد و در این راستا سرمایه گذاری های بسیاری کرده است. مجموعه ی قالب سازی شرکت سیمین صنعت کوشا با سال ها تجربه در زمینه قالب سازی آماده ارائه قالب های سفارشی با بهترین کیفیت و قیمت است و دراین راستا تلاش بسیاری برای حضور در عرصه رقابت و ارتباط با دیگر رقبا داشته است
+                                این شرکت جزو قدیمی ترین شرکت ها در منطقه در زمینه پرسکاری است و دارای سال ها تجربه در این زمینه است.
+                                دارای دستگاه های پرس جوش و جوش CO2 و نقطه جوش و گان است.
+                                </p>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            <!--slider-->
+                <div class="swiper mySwiper w-full h-full">
+                    <div class="swiper-wrapper shadow-2xl shadow-sisakoLightBlue">
+                      <div class="swiper-slide p-1"><img src="../images/5.jpg" alt="a" class="w-full h-full object-cover rounded-sm" /></div>
+                      <div class="swiper-slide p-1"><img src="../images/10.jpg" alt="a" class="w-full h-full object-cover rounded-sm" /></div>
+                      <div class="swiper-slide p-1"><img src="../images/11.jpg" alt="a" class="w-full h-full object-cover rounded-sm" /></div>
+                      <div class="swiper-slide p-1"><img src="../images/12.jpg" alt="a" class="w-full h-full object-cover rounded-sm" /></div>
+                      <div class="swiper-slide p-1"><img src="../images/4.png" alt="a" class="w-full h-full object-cover rounded-sm" /></div>
+                      <div class="swiper-slide p-1"><img src="../images/3.png" alt="a" class="w-full h-full object-cover rounded-sm" /></div>
+                      <div class="swiper-slide p-1"><img src="../images/7.jpg" alt="a" class="w-full h-full object-cover rounded-sm" />7</div>
+                      <div class="swiper-slide p-1"><img src="../images/8.jpg" alt="a" class="w-full h-full object-cover rounded-sm" /></div>
+                      <div class="swiper-slide p-1"><img src="../images/9.jpg" alt="a" class="w-full h-full object-cover rounded-sm" /></div>
+                    </div>
+                </div>
+    </div>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        watchSlidesProgress: true,
+        slidesPerView: 3,
+      });
+    </script>
+</body>
+</html>
