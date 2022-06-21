@@ -11,22 +11,23 @@
 <body dir="rtl" class="font-samim">
     <div class="grid grid-cols-1 xl:grid-cols-2 justify-center items-center gap-4">
         <!--unit introduction-->
-            <div class="container mx-auto max-w-2xl p-2" x-data="{showcart:1}">
+            <div class="container mx-auto max-w-2xl p-2 h-80" x-data="{showcart:1}">
                 <div class="flex bg-blue-600 p-1 rounded-md overflow-hidden mb-2">
-                    <p @click="showcart =1"  class="flex-1 flex justify-center items-center p-3  text-white cursor-pointer hover:bg-blue-300 hover:text-blue-900 hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">قالب سازی</p>
+                    <p @click="showcart =1"  class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-blue-300 hover:text-blue-900 hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">قالب سازی</p>
                     <p @click="showcart =2"  class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-blue-300 hover:text-blue-900 hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">پرسکاری</p>
                     <p @click="showcart =3"  class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-blue-300 hover:text-blue-900 hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">مونتاژ</p>
                 </div>
                 <div>
                     <div>
-                        <div x-cloak x-show="showcart===1" class="p-2 shadow-md shadow-slate-600 rounded-md sm:grid sm:grid-cols-2 sm:gap-x-4 ">
+                        <div x-cloak x-show="showcart===1" class="p-2 shadow-md shadow-slate-600 rounded-md sm:grid sm:grid-cols-2 sm:gap-x-4 relative">
                             <img src="../images/4.png" class="aspect-video w-40 float-right rounded-md ml-2 sm:w-full h-full" alt="sisako">
                             <p>مجموعه ی قالب سازی شرکت سیمین صنعت کوشا دارای قدمتی طولانی نیست و این مجموعه از آغاز بر آن بوده که دانش فنی خود را ارتقا دهد و در این راستا سرمایه گذاری های بسیاری کرده است. مجموعه ی قالب سازی شرکت سیمین صنعت کوشا با سال ها تجربه در زمینه قالب سازی آماده ارائه قالب های سفارشی با بهترین کیفیت و قیمت است و دراین راستا تلاش بسیاری برای حضور در عرصه رقابت و ارتباط با دیگر رقبا داشته است
                                 ین شرکت جزو قدیمی ترین شرکت ها در منطقه در زمینه قاب سازی است و دارای سال ها تجربه در این زمینه است.
                             </p>
+                            <div class="flex justify-end"><p class="bg-sisakoLightBlue p-2 rounded-sm text-sisakoWhite transition animate-pulse">امکانات و توانمندی ها</p></div>
                         </div>
             
-                        <div x-cloak x-show="showcart===2" class="p-2 shadow-md shadow-slate-600 rounded-md sm:grid sm:grid-cols-2 sm:gap-x-4">
+                        <div x-cloak x-show="showcart===2" class="p-2 shadow-md shadow-slate-600 rounded-md sm:grid sm:grid-cols-2 sm:gap-x-4 relative">
                             <img src="../images/5.jpg" class="aspect-video w-40 float-right rounded-md ml-2 sm:w-full h-full" alt="sisako">
                             <p>مجموعه ی پرسکاری شرکت سیمین صنعت کوشا دارای قدمتی طولانی نیست و این مجموعه از آغاز بر آن بوده که دانش فنی خود را ارتقا دهد و در این راستا سرمایه گذاری های بسیاری کرده است. مجموعه ی قالب سازی شرکت سیمین صنعت کوشا با سال ها تجربه در زمینه قالب سازی آماده ارائه قالب های سفارشی با بهترین کیفیت و قیمت است و دراین راستا تلاش بسیاری برای حضور در عرصه رقابت و ارتباط با دیگر رقبا داشته است
                                 این شرکت جزو قدیمی ترین شرکت ها در منطقه در زمینه پرسکاری است و دارای سال ها تجربه در این زمینه است.
@@ -45,7 +46,7 @@
                 </div>
             </div>
             <!--slider-->
-                <div class="swiper mySwiper w-full h-full">
+                <div class="swiper mySwiper w-full h-60 mt-12">
                     <div class="swiper-wrapper shadow-2xl shadow-sisakoLightBlue">
                       <div class="swiper-slide p-1"><img src="../images/5.jpg" alt="a" class="w-full h-full object-cover rounded-sm" /></div>
                       <div class="swiper-slide p-1"><img src="../images/10.jpg" alt="a" class="w-full h-full object-cover rounded-sm" /></div>
