@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="../build/tailwind.css" rel="stylesheet" />
+    <title>sisako site</title>
+</head>
+<body class="font-samim bg-sisakoWhite text-sm sm:text-base md:text-lg ld:text-xl">
+    <!-- headerSection -->
+    <div class="w-full h-screen  px-8 py-6 xl:px-14 xl:p-18">
+        <!--headerSection card -->
+        <div class="relative w-full h-full container mx-auto bg-sisakoGray rounded-md shadow-lg drop-shadow-2xl shadow-cyan-500">
+            <!-- headerSection card loge -->
+            <div id="logo" class="h-1-6 justify-start items-start invisible"><img src="../images/logo.png" class="w-20 p-2 sm:w-28 md:w-36 lg:w-44" alt="sisako" /></div>
+            <!-- headerSection card titles -->
+            <div class="h-1/6 flex justify-center items-center">
+                <p id="dicasting"class="flex-1 flex justify-center items-center py-4 transition  duration-500   text-sisakoDarkBlue  invisible  hover:text-sisakoLightBlue  cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">قالب سازی</p>
+                <p id="pressing" class="flex-1 flex justify-center items-center py-4 transition  duration-500  text-sisakoDarkBlue invisible hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">پرسکاری</p>
+                <p id="assembly" class="flex-1 flex justify-center items-center py-4 transition  duration-500  text-sisakoDarkBlue invisible hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">مونتاژ</p>
+            </div>
+            <!-- headerSection card sisako -->
+            <div class="h-3/6 flex justify-center items-center">
+                <p class="font-medium font-['Niconne',cursive] text-white  text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-800 cursor-pointer  transition-all duration-1000 ">sisako</p>
+            </div>
+            <!-- headerSection card ball -->
+            <a class="absolute w-12 h-12  md:w-16 md:h-16  rounded-full cursor-pointer animate-bounce bg-sisakoDarkBlue hover:bg-sisakoLightBlue transition-colors duration-300 left-2 bottom-2 flex justify-center items-center text-white hover:text-sisakoDarkBlue">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-6 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- unitIntoduction&CompanyImages -->
+    <div class="grid grid-cols-1 xl:h-[27rem]  xl:grid-cols-2 justify-center items-center gap-20 xl:gap-4">
+        <!-- unitIntoduction&CompanyImages  unitIntoduction-->
+            <div class="container mx-auto max-w-2xl h-96 xl:h-full text-ellipsis shadow-lg shadow-cyan-600 drop-shadow-2xl " x-data="{showcart:1}">
+                <!-- unitIntoduction&CompanyImages  unitIntoduction title-->
+                <div class="flex bg-sisakoDarkBlue p-1 rounded-md overflow-hidden  h-1/6">
+                    <p @click="showcart =1"  class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">قالب سازی</p>
+                    <p @click="showcart =2"  class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">پرسکاری</p>
+                    <p @click="showcart =3"  class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">مونتاژ</p>
+                </div>
+                    <!-- unitIntoduction&CompanyImages  unitIntoduction description-->
+                <div class="h-5/6">
+                    <div x-cloak x-show="showcart===1" class="h-full p-2 shadow-md shadow-slate-600 rounded-md sm:grid sm:grid-cols-2 sm:gap-x-4 overflow-hidden">
+                        <img src="../images/4.png" class="w-40 float-right rounded-md ml-2 sm:w-full sm:h-full sm:ml-0" alt="sisako">
+                        <p class="">مجموعه ی قالب سازی شرکت سیمین صنعت کوشا دارای قدمتی طولانی نیست و این مجموعه از آغاز بر آن بوده که دانش فنی خود را ارتقا دهد و در این راستا سرمایه گذاری های بسیاری کرده است. مجموعه ی قالب سازی شرکت سیمین صنعت کوشا با سال ها تجربه در زمینه قالب سازی آماده ارائه قالب های سفارشی با بهترین کیفیت و قیمت است و دراین راستا تلاش بسیاری برای حضور در عرصه رقابت و ارتباط با دیگر رقبا داشته است
+                                ت و دارای سال ها تجربه در این زمینه است.
+                        </p>
+                    </div>
+            
+                    <div x-cloak x-show="showcart===2" class="h-full p-2 shadow-md shadow-slate-600 rounded-md sm:grid sm:grid-cols-2 sm:gap-x-4 overflow-hidden">
+                        <img src="../images/5.jpg" class="w-40 float-right rounded-md ml-2 sm:w-full sm:h-full sm:ml-0" alt="sisako">
+                        <p>مجموعه ی پرسکاری شرکت سیمین صنعت کوشا دارای قدمتی طولانی نیست و این مجموعه از آغاز بر آن بوده که دانش فنی خود را ارتقا دهد و در این راستا سرمایه گذاری های بسیاری کرده است. مجموعه ی قالب سازی شرکت سیمین صنعت کوشا با سال ها تجربه در زمینه قالب سازی آماده ارائه قالب های سفارشی با بهترین کیفیت و قیمت است و دراین راستا تلاش بسیاری برای حضور در عرصه رقابت و ارتباط با دیگر رقبا داشته است
+                                این شرکت جزو قدیمی ترین شرکت ها در منطقه در زمینه پرسین زمینه است.
+                        </p>
+                    </div>
+        
+                    <div x-cloak x-show="showcart===3" class="h-full p-2 shadow-md shadow-slate-600 rounded-md sm:grid sm:grid-cols-2 sm:gap-x-4 overflow-hidden">
+                        <img src="../images/5.jpg" class="w-40 float-right rounded-md ml-2 sm:w-full sm:h-full sm:ml-0" alt="sisako">
+                        <p>مجموعه ی مونتاژ شرکت سیمین صنعت کوشا دارای قدمتی طولانی نیست و این مجموعه از آغاز بر آن بوده که دانش فنی خود را ارتقا دهد و در این راستا سرمایه گذاری های بسیاری کرده است. مجموعه ی قالب سازی شرکت سیمین صنعت کوشا با سال ها تجربه در زمینه قالب سازی آماده ارائه قالب های سفارشی با بهترین کیفیت و قیمت است و دراین راستا تلاش بسیاری برای حضور در عرصه رقابت و ارتباط با دیگر رقبا داشته است
+                                این شرکت جزو قدیمی ترین شرکت ها در است و دارای سال ها تجربهنه است.
+                        </p>
+                    </div>
+        
+                </div>
+            </div>
+            <!--CompanyImages-->
+            <div class="container mx-auto flex items-center justify-center scroll overflow-y-auto cursor-grabbing shadow-lg shadow-cyan-600 drop-shadow-2xl rounded-md bg-sisakoGray h-52 xl:h-full">
+                <div class="flex flex-nowrap gap-2 justify-center items-center">
+                  <img src="../images/2.png" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                  <img src="../images/3.png" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                  <img src="../images/4.png" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                  <img src="../images/5.jpg" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                  <img src="../images/2.png" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                  <img src="../images/3.png" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                  <img src="../images/4.png" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                  <img src="../images/5.jpg" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                </div>
+            </div>  
+    </div>
+
+
+
+
+
+
+
+
+
+     <!--productsSlidersContainer-->
+ <div class="grid lg:grid-cols-2 justify-center content-center items-center gap-2 w-full">
+
+    <!--productsSlidersContainer coverProducts-->
+    <div class="p-4 mt-2 container  self-center flex justify-center items-center">
+     <div class="w-full h-40 swiper mySwiper max-w-xl shadow-xl shadow-slate-900 flex items-center justify-center bg-sisakoGray rounded-md">
+         <div class="swiper-wrapper">
+           <!--productsSlidersContainer coverProducts slider 1-->
+           <div class="swiper-slide content-center items-center">
+             <div class="flex gap-2 justify-center items-start w-full h-full">
+               <div class="flex-1 felx justify-center items-center w-full h-full">
+                   <img class="object-contain w-full h-full" src="../images/parts/1.png" alt="image"/>
+               </div>
+               <div class="flex-1 flex flex-col gap-2 justify-center w-full h-full">
+                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold  text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+               </div> 
+             </div>
+           </div>
+           <!--productsSlidersContainer coverProducts slider 2-->
+           <div class="swiper-slide ">
+             <div class="flex gap-2 justify-center items-start w-full h-full">
+               <div class="flex-1 felx justify-center items-center w-full h-full">
+                   <img class="object-contain w-full h-full" src="../images/parts/2.png" alt="image"/>
+               </div>
+               <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+               </div> 
+             </div>
+           </div>
+             <!--productsSlidersContainer coverProducts slider 3-->
+             <div class="swiper-slide">
+                 <div class="flex gap-2 justify-center items-start w-full h-full">
+                   <div class="flex-1 felx justify-center items-center w-full h-full">
+                       <img class="object-contain w-full h-full" src="../images/parts/3.png" alt="image"/>
+                   </div>
+                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                   </div> 
+                 </div>
+               </div>
+             <!--productsSlidersContainer coverProducts slider 4-->
+             <div class="swiper-slide">
+                 <div class="flex gap-2 justify-center items-start w-full h-full">
+                   <div class="flex-1 felx justify-center items-center w-full h-full">
+                       <img class="object-contain w-full h-full" src="../images/parts/4.png" alt="image"/>
+                   </div>
+                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                   </div> 
+                 </div>
+               </div>
+             <!--productsSlidersContainer coverProducts slider 5-->
+             <div class="swiper-slide">
+                 <div class="flex gap-2 justify-center items-start w-full h-full">
+                   <div class="flex-1 felx justify-center items-center w-full h-full">
+                       <img class="object-contain w-full h-full" src="../images/parts/5.png" alt="image"/>
+                   </div>
+                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                   </div> 
+                 </div>
+               </div>
+               <!--productsSlidersContainer coverProducts slider 6-->
+               <div class="swiper-slide">
+                 <div class="flex gap-2 justify-center items-start w-full h-full">
+                   <div class="flex-1 felx justify-center items-center w-full h-full">
+                       <img class="object-contain w-full h-full" src="../images/parts/6.png" alt="image"/>
+                   </div>
+                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                   </div> 
+                 </div>
+               </div>
+       </div>
+       <div class="swiper-pagination "></div>
+       </div>
+   </div>
+   
+
+   <!--dastemotor products-->
+   <div class="p-4 mt-2 container flex-1 content-center items-center">
+   <div class="w-full h-40 swiper mySwiper max-w-xl shadow-xl shadow-slate-900 flex items-center justify-center bg-sisakoGray rounded-md">
+       <div class="swiper-wrapper">
+         <!--slider 1-->
+         <div class="swiper-slide">
+           <div class="flex gap-2 justify-center items-start w-full h-full">
+             <div class="flex-1 felx justify-center items-center w-full h-full">
+                 <img class="object-contain w-full h-full" src="../images/parts/1.png" alt="image"/>
+             </div>
+             <div class="flex-1 flex flex-col gap-2 justify-center w-full h-full">
+                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+             </div> 
+           </div>
+         </div>
+         <!--slider 2-->
+         <div class="swiper-slide">
+           <div class="flex gap-2 justify-center items-start w-full h-full">
+             <div class="flex-1 felx justify-center items-center w-full h-full">
+                 <img class="object-contain w-full h-full" src="../images/parts/2.png" alt="image"/>
+             </div>
+             <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+             </div> 
+           </div>
+         </div>
+           <!--slider 3-->
+           <div class="swiper-slide">
+               <div class="flex gap-2 justify-center items-start w-full h-full">
+                 <div class="flex-1 felx justify-center items-center w-full h-full">
+                     <img class="object-contain w-full h-full" src="../images/parts/3.png" alt="image"/>
+                 </div>
+                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                 </div> 
+               </div>
+             </div>
+           <!--slider 4-->
+           <div class="swiper-slide">
+               <div class="flex gap-2 justify-center items-start w-full h-full">
+                 <div class="flex-1 felx justify-center items-center w-full h-full">
+                     <img class="object-contain w-full h-full" src="../images/parts/4.png" alt="image"/>
+                 </div>
+                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                 </div> 
+               </div>
+             </div>
+           <!--slider 5-->
+           <div class="swiper-slide">
+               <div class="flex gap-2 justify-center items-start w-full h-full">
+                 <div class="flex-1 felx justify-center items-center w-full h-full">
+                     <img class="object-contain w-full h-full" src="../images/parts/5.png" alt="image"/>
+                 </div>
+                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                 </div> 
+               </div>
+             </div>
+             <!--slider 6-->
+             <div class="swiper-slide">
+               <div class="flex gap-2 justify-center items-start w-full h-full">
+                 <div class="flex-1 felx justify-center items-center w-full h-full">
+                     <img class="object-contain w-full h-full" src="../images/parts/6.png" alt="image"/>
+                 </div>
+                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                 </div> 
+               </div>
+             </div>
+     </div>
+     <div class="swiper-pagination "></div>
+     </div>
+   </div>
+   
+   
+   
+   
+   
+   
+   <!--lent products-->
+   <div class="p-4 mt-2 container flex-1">
+     <div class="w-full h-40 swiper mySwiper max-w-xl shadow-xl shadow-slate-900 flex items-center justify-center bg-sisakoGray rounded-md">
+         <div class="swiper-wrapper">
+           <!--slider 1-->
+           <div class="swiper-slide">
+             <div class="flex gap-2 justify-center items-start w-full h-full">
+               <div class="flex-1 felx justify-center items-center w-full h-full">
+                   <img class="object-contain w-full h-full" src="../images/parts/1.png" alt="image"/>
+               </div>
+               <div class="flex-1 flex flex-col gap-2 justify-center w-full h-full">
+                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+               </div> 
+             </div>
+           </div>
+           <!--slider 2-->
+           <div class="swiper-slide">
+             <div class="flex gap-2 justify-center items-start w-full h-full">
+               <div class="flex-1 felx justify-center items-center w-full h-full">
+                   <img class="object-contain w-full h-full" src="../images/parts/2.png" alt="image"/>
+               </div>
+               <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+               </div> 
+             </div>
+           </div>
+             <!--slider 3-->
+             <div class="swiper-slide">
+                 <div class="flex gap-2 justify-center items-start w-full h-full">
+                   <div class="flex-1 felx justify-center items-center w-full h-full">
+                       <img class="object-contain w-full h-full" src="../images/parts/3.png" alt="image"/>
+                   </div>
+                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                   </div> 
+                 </div>
+               </div>
+             <!--slider 4-->
+             <div class="swiper-slide">
+                 <div class="flex gap-2 justify-center items-start w-full h-full">
+                   <div class="flex-1 felx justify-center items-center w-full h-full">
+                       <img class="object-contain w-full h-full" src="../images/parts/4.png" alt="image"/>
+                   </div>
+                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                   </div> 
+                 </div>
+               </div>
+             <!--slider 5-->
+             <div class="swiper-slide">
+                 <div class="flex gap-2 justify-center items-start w-full h-full">
+                   <div class="flex-1 felx justify-center items-center w-full h-full">
+                       <img class="object-contain w-full h-full" src="../images/parts/5.png" alt="image"/>
+                   </div>
+                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                   </div> 
+                 </div>
+               </div>
+               <!--slider 6-->
+               <div class="swiper-slide">
+                 <div class="flex gap-2 justify-center items-start w-full h-full">
+                   <div class="flex-1 felx justify-center items-center w-full h-full">
+                       <img class="object-contain w-full h-full" src="../images/parts/6.png" alt="image"/>
+                   </div>
+                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                   </div> 
+                 </div>
+               </div>
+       </div>
+       <div class="swiper-pagination "></div>
+       </div>
+   </div>
+   
+   
+   
+   
+   
+   
+   <!--home products-->
+   <div class="p-4 mt-2 container flex-1">
+   <div class="w-full h-40 swiper mySwiper max-w-xl shadow-xl shadow-slate-900 flex items-center justify-center bg-sisakoGray rounded-md">
+       <div class="swiper-wrapper">
+         <!--slider 1-->
+         <div class="swiper-slide">
+           <div class="flex gap-2 justify-center items-start w-full h-full">
+             <div class="flex-1 felx justify-center items-center w-full h-full">
+                 <img class="object-contain w-full h-full" src="../images/parts/1.png" alt="image"/>
+             </div>
+             <div class="flex-1 flex flex-col gap-2 justify-center w-full h-full">
+                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+             </div> 
+           </div>
+         </div>
+         <!--slider 2-->
+         <div class="swiper-slide">
+           <div class="flex gap-2 justify-center items-start w-full h-full">
+             <div class="flex-1 felx justify-center items-center w-full h-full">
+                 <img class="object-contain w-full h-full" src="../images/parts/2.png" alt="image"/>
+             </div>
+             <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+             </div> 
+           </div>
+         </div>
+           <!--slider 3-->
+           <div class="swiper-slide">
+               <div class="flex gap-2 justify-center items-start w-full h-full">
+                 <div class="flex-1 felx justify-center items-center w-full h-full">
+                     <img class="object-contain w-full h-full" src="../images/parts/3.png" alt="image"/>
+                 </div>
+                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                 </div> 
+               </div>
+             </div>
+           <!--slider 4-->
+           <div class="swiper-slide">
+               <div class="flex gap-2 justify-center items-start w-full h-full">
+                 <div class="flex-1 felx justify-center items-center w-full h-full">
+                     <img class="object-contain w-full h-full" src="../images/parts/4.png" alt="image"/>
+                 </div>
+                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                 </div> 
+               </div>
+             </div>
+           <!--slider 5-->
+           <div class="swiper-slide">
+               <div class="flex gap-2 justify-center items-start w-full h-full">
+                 <div class="flex-1 felx justify-center items-center w-full h-full">
+                     <img class="object-contain w-full h-full" src="../images/parts/5.png" alt="image"/>
+                 </div>
+                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                 </div> 
+               </div>
+             </div>
+             <!--slider 6-->
+             <div class="swiper-slide">
+               <div class="flex gap-2 justify-center items-start w-full h-full">
+                 <div class="flex-1 felx justify-center items-center w-full h-full">
+                     <img class="object-contain w-full h-full" src="../images/parts/6.png" alt="image"/>
+                 </div>
+                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
+                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
+                 </div> 
+               </div>
+             </div>
+     </div>
+     <div class="swiper-pagination "></div>
+     </div>
+   </div> 
+</div>
+
+
+
+
+
+
+
+
+<!-- footer -->
+<div class="flex justify-center items-center relative -bottom-7 z-10">
+  <div class="flex gap-x-8 items-center justify-center">
+      <div
+          class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring   ring-cyan-500 hover:animate-shake hover:duration-500">
+          <img src="../images/logos/icons8-instagram-96.png" /></div>
+      <div
+          class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
+          <img src="../images/logos/icons8-whatsapp-96.png" /></div>
+      <div
+          class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
+          <img src="../images/logos/icons8-telegram-app-96.png" /></div>
+      <div
+          class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
+          <img src="../images/logos/icons8-gmail-96.png" /></div>
+  </div>
+</div>
+<div
+  class="grid lg:grid-cols-2 border-2 w-full relative p-2 container mx-auto shadow-lg shadow-cyan-600 drop-shadow-lg rounded-md bg-sisakoGray">
+  <div class="flex flex-col gap-y-6 mb-10">
+      <div class="flex justify-start items-center gap-x-2 mt-15">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-sisakoDarkBlue stroke-2" fill="none" stroke="blue" stroke-width="2"  viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          </svg>
+          <p>البرز - فردیس - شهرک صنعتی سیمین دشت - خیابان هشتم غربی - پلاک 146</p>
+      </div>
+      <div class="flex justify-start items-center gap-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-sisakoDarkBlue  stroke-2" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <p>026-357841</p>
+      </div>
+      <div class="flex justify-start items-center gap-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-sisakoDarkBlue" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+          </svg>
+          <p>026-35748741</p>
+      </div>
+      <div class="flex justify-start items-center gap-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-sisakoDarkBlue" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <p>sisako2002@gmail.com</p>
+      </div>
+  </div>
+  <div class="flex justify-center items-center p-2">
+      <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.904851734551!2d51.02570661520215!3d35.75314333363218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8deb57c777f03d%3A0x94bc3e1f551647a5!2ssimin%20sanat%20kosha!5e0!3m2!1sen!2s!4v1655706500848!5m2!1sen!2s"
+          class="w-full h-96 rounded-md shadow-md shadow-cyan-400"></iframe>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Alpine js -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>       
+    <!-- swiper js for product section -->
+    <script src="../js/productsSwiper.js"></script>
+    <script src="../js/onlaod.js"></script>
+</body>
+</html>
