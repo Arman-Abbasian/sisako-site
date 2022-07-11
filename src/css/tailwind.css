@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ /* IRANYekan ***/
+@font-face {
+    font-family: samim;
+    src: url('../../public/Fonts/samim-font-v2.0.1/Samim.eot');
+    src: url('../../public/Fonts/samim-font-v2.0.1/Samim.eot?#iefix') format('FontName-opentype'),
+         url('../../public/Fonts/samim-font-v2.0.1/Samim-Bold.woff') format('woff'),
+         url('../../public/Fonts/samim-font-v2.0.1/Samim.ttf') format('truetype');
+  }
+  /* IRANSansX ***/
+@font-face {
+	font-family: IRANSansX;
+	font-style: normal;
+	font-weight: 700;
+	src: url('../../public/Fonts/woff/IRANSansX-Bold.woff') format('woff'),
+	url('../../public/Fonts/woff2/IRANSansX-bold.woff2') format('woff2');
+}
+@font-face {
+	font-family: IRANSansX;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../../public/Fonts/woff/IRANSansX-Medium.woff') format('woff'),
+	url('../../public/Fonts/woff2/IRANSansX-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family: IRANSansX;
+	font-style: normal;
+	font-weight: 400;
+	src: url('../../public/Fonts/woff/IRANSansX-regular.woff') format('woff'),
+	url('../../public/Fonts/woff2/IRANSansX-regular.woff2') format('woff2');
+}

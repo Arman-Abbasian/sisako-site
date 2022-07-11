@@ -10,11 +10,11 @@
 <body class="font-samim bg-sisakoWhite">
     <div class="w-screen h-screen  px-8 py-6 xl:px-14 xl:p-">
         <div class="relative w-full h-full container mx-auto bg-sisakoGray rounded-md shadow-lg drop-shadow-2xl shadow-cyan-500">
-            <div class="h-1-6 justify-start items-start"><img src="../images/logo.png" class="w-20 p-2 sm:w-28 md:w-36 lg:w-44" alt="sisako" /></div>
-            <div class="h-1/6 flex justify-center items-center text-transparent">
-                <p class="flex-1 flex justify-center items-center py-4 transition duration-300 text-sisakoDarkBlue hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">قالب سازی</p>
-                <p class="flex-1 flex justify-center items-center py-4 transition duration-300 text-sisakoDarkBlue hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">پرسکاری</p>
-                <p class="flex-1 flex justify-center items-center py-4 transition duration-300 text-sisakoDarkBlue hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">مونتاژ</p>
+            <div id="logo" class="h-1-6 justify-start items-start invisible"><img src="../images/logo.png" class="w-20 p-2 sm:w-28 md:w-36 lg:w-44" alt="sisako" /></div>
+            <div class="h-1/6 flex justify-center items-center">
+                <p id="dicasting"class="flex-1 flex justify-center items-center py-4 transition  duration-500   text-sisakoDarkBlue  invisible  hover:text-sisakoLightBlue  cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">قالب سازی</p>
+                <p id="pressing" class="flex-1 flex justify-center items-center py-4 transition  duration-500  text-sisakoDarkBlue invisible hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">پرسکاری</p>
+                <p id="assembly" class="flex-1 flex justify-center items-center py-4 transition  duration-500  text-sisakoDarkBlue invisible hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">مونتاژ</p>
             </div>
             <div class="h-3/6 flex justify-center items-center">
                 <p class="font-medium font-['Niconne',cursive] text-white  text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-800 cursor-pointer  transition-all duration-1000 ">sisako</p>
@@ -26,7 +26,7 @@
             </a>
         </div>
     </div>
-
     <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+    <script src="../js/onlaod.js"></script>
 </body>
 </html>
