@@ -491,6 +491,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
   margin-right: auto;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .mt-24 {
   margin-top: 6rem;
 }
@@ -506,8 +510,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ml-2 {
   margin-left: 0.5rem;
 }
+.mb-8 {
+  margin-bottom: 2rem;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
 }
 .flex {
   display: flex;
@@ -660,6 +670,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-2 {
   gap: 0.5rem;
 }
+.gap-4 {
+  gap: 1rem;
+}
 .gap-20 {
   gap: 5rem;
 }
@@ -674,11 +687,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
 }
-.divide-y-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(8px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(8px * var(--tw-divide-y-reverse));
-}
 .self-center {
   align-self: center;
 }
@@ -687,6 +695,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .overflow-y-auto {
   overflow-y: auto;
+}
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 .text-ellipsis {
   text-overflow: ellipsis;
@@ -700,15 +711,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-2 {
   border-width: 2px;
 }
-.border-b-4 {
-  border-bottom-width: 4px;
-}
 .border-b-2 {
   border-bottom-width: 2px;
-}
-.border-sisakoDarkBlue {
-  --tw-border-opacity: 1;
-  border-color: rgb(17 45 78 / var(--tw-border-opacity));
 }
 .border-sisakoLightBlue {
   --tw-border-opacity: 1;
@@ -769,9 +773,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-3 {
   padding: 0.75rem;
 }
-.p-0 {
-  padding: 0px;
-}
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -783,6 +784,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+.pb-1 {
+  padding-bottom: 0.25rem;
 }
 .text-center {
   text-align: center;
@@ -803,6 +810,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -850,11 +861,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.shadow-sm {
-  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
 .shadow-cyan-500 {
   --tw-shadow-color: #06b6d4;
   --tw-shadow: var(--tw-shadow-colored);
@@ -890,10 +896,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .drop-shadow-2xl {
   --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-.drop-shadow-md {
-  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition {
@@ -1147,11 +1149,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
-  }
-
-  .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 }
 @media (min-width: 768px) {
