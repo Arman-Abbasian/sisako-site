@@ -10,6 +10,12 @@
     <title>sisako site</title>
 </head>
 <body class="font-samim bg-sisakoWhite text-sm sm:text-base md:text-lg ld:text-xl">
+  <!-- scroll top btn -->
+  <button id="myBtn" class="fixed bottom-4 right-1 w-14 h-14 rounded-full bg-sisakoDarkBlue transition-all duration-1000 z-50 bg-opacity-60 opacity-60 flex justify-center items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sisakoGray" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
     <!-- headerSection -->
     <div class="w-full h-screen  px-8 py-6 xl:px-14 xl:p-18">
         <!--headerSection card -->
@@ -18,9 +24,9 @@
             <div id="logo" class="h-1-6 justify-start items-start invisible"><img src="../images/logo.png" class="w-20 p-2 sm:w-28 md:w-36 lg:w-44" alt="sisako" /></div>
             <!-- headerSection card titles -->
             <div class="h-1/6 flex justify-center items-center">
-                <p id="dicasting"class="flex-1 flex justify-center items-center py-4 transition  duration-500   text-sisakoDarkBlue  invisible  hover:text-sisakoLightBlue  cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"><a href="#dicasting">قالب سازی</a></p>
-                <p id="pressing" class="flex-1 flex justify-center items-center py-4 transition  duration-500  text-sisakoDarkBlue invisible hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"><a href="#pressing">پرسکاری</a></p>
-                <p id="assembly" class="flex-1 flex justify-center items-center py-4 transition  duration-500  text-sisakoDarkBlue invisible hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"><a href="#assembly">مونتاژ</a></p>
+                <p id="dicasting"class="flex-1 flex justify-center items-center py-4 transition  duration-500   text-sisakoDarkBlue  invisible  hover:text-sisakoLightBlue  cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"><a href="#discasting">قالب سازی</a></p>
+                <p id="pressing" class="flex-1 flex justify-center items-center py-4 transition  duration-500  text-sisakoDarkBlue invisible hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"><a href="#pressingg">پرسکاری</a></p>
+                <p id="assembly" class="flex-1 flex justify-center items-center py-4 transition  duration-500  text-sisakoDarkBlue invisible hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"><a href="#assemblyy">مونتاژ</a></p>
             </div>
             <!-- headerSection card sisako -->
             <div class="h-3/6 flex justify-center items-center">
@@ -41,7 +47,6 @@
 
 
 
-
     <!-- unitIntoduction&CompanyImages -->
     <div class="px-8" id="introduction">
     <div class="grid grid-cols-1 xl:h-[27rem] xl:grid-cols-2 justify-center items-center gap-4">
@@ -49,9 +54,9 @@
             <div class="container mx-auto max-w-2xl h-96 xl:h-full text-ellipsis shadow-lg shadow-cyan-600 drop-shadow-2xl " x-data="{showcart:1}">
                 <!-- unitIntoduction&CompanyImages  unitIntoduction title-->
                 <div class="flex bg-sisakoDarkBlue p-1 rounded-md overflow-hidden  h-1/6">
-                    <p @click="showcart =1"  class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">قالب سازی</p>
-                    <p @click="showcart =2"  class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">پرسکاری</p>
-                    <p @click="showcart =3"  class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">مونتاژ</p>
+                    <p @click="showcart =1" :class="showcart ===1 ? 'bg-sisakoGray text-blue-900 rounded-sm ring-offset-2 ring-offset-blue-600 ring-white ring-2 outline-none' : ''"  class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">قالب سازی</p>
+                    <p @click="showcart =2" :class="showcart ===2 ? 'bg-sisakoGray text-blue-900 rounded-sm ring-offset-2 ring-offset-blue-600 ring-white ring-2 outline-none' : ''" class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">پرسکاری</p>
+                    <p @click="showcart =3"  :class="showcart ===3 ? 'bg-sisakoGray text-blue-900 rounded-sm ring-offset-2 ring-offset-blue-600 ring-white ring-2 outline-none' : ''" class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">مونتاژ</p>
                 </div>
                     <!-- unitIntoduction&CompanyImages  unitIntoduction description-->
                 <div class="h-5/6 sm:text-base">
@@ -79,18 +84,18 @@
                 </div>
             </div>
             <!--CompanyImages-->
-            <div class="container mx-auto flex items-center justify-center scroll overflow-y-auto cursor-grabbing shadow-lg shadow-cyan-600 drop-shadow-2xl rounded-md bg-sisakoGray h-52 xl:h-full">
-                <div class="flex flex-nowrap gap-2 justify-center items-center">
-                  <img src="../images/company/1.jpg" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
-                  <img src="../images/company/2.jpg" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
-                  <img src="../images/company/3.png" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
-                  <img src="../images/company/4.JPG" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
-                  <img src="../images/company/5.jpg" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
-                  <img src="../images/company/6.png" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
-                  <img src="../images/company/7.png" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+             <div class="container mx-auto flex items-center justify-center scroll shadow-lg shadow-cyan-600 drop-shadow-2xl rounded-md bg-sisakoGray h-52 xl:h-full">
+                <div class="flex flex-nowrap gap-2 overflow-auto cursor-grabbing">
+                  <img src="../images/company/5.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                  <img src="../images/company/6.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                  <img src="../images/company/7.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                  <img src="../images/company/1.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                  <img src="../images/company/2.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                  <img src="../images/company/3.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                  <img src="../images/company/4.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+                  
                 </div>
-            </div>  
-    </div>
+            </div>
   </div>
 
 
@@ -102,7 +107,7 @@
 
 
      <!--productsSlidersContainer-->
- <div class="grid lg:grid-cols-2 justify-center content-center items-center gap-2 w-full">
+ <div class="grid lg:grid-cols-2 justify-center content-center items-center gap-2 w-full" >
 
     <!--productsSlidersContainer coverProducts-->
     <div class="p-4 mt-2 container  self-center flex justify-center items-center">
@@ -475,7 +480,7 @@
   <!--unitImagesContainer-->
 <div>
   <!--unitImagesContainer diecasting-->
-  <div class="p-4 my-4" id="dicasting">
+  <div class="p-4 my-4" id="discasting">
     <!--unitImagesContainer diecasting  unitName -->
     <p class="border-b-2 pb-1 font-bold text-base  mb-8 border-sisakoLightBlue text-sisakoDarkBlue">واحد قالب سازی</p>
     <!-- unitImagesContainer diecasting  unitImages -->
@@ -573,7 +578,7 @@
 
 
   <!-- unitImagesContainer pressing -->
-  <div class="p-4 mb-4" id="pressing">
+  <div class="p-4 mb-4" id="pressingg">
     <!--unitImagesContainer pressing  unitName -->
     <p class="border-b-2 pb-1 font-bold text-base mb-2 border-sisakoLightBlue text-sisakoDarkBlue">واحد پرسکاری</p>
     <!-- unitImagesContainer pressing  unitImages -->
@@ -671,7 +676,7 @@
 
 
   <!--unitImagesContainer Assembly-->
-  <div class="p-4 mb-4" id="assembly">
+  <div class="p-4 mb-4" id="assemblyy">
     <!--unitImagesContainer Assembly  unitName -->
     <p class="border-b-2  pb-1 font-bold text-base mb-2 border-sisakoLightBlue text-sisakoDarkBlue">واحد مونتاژ</p>
     <!-- unitImagesContainer Assembly  unitImages -->
@@ -776,20 +781,20 @@
 
 <!-- footer -->
 <div class="flex justify-center items-center relative -bottom-7 z-10">
+  <!-- footer links -->
   <div class="flex gap-x-8 items-center justify-center">
-      <div
-          class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring   ring-cyan-500 hover:animate-shake hover:duration-500">
-          <img src="../images/logos/icons8-instagram-96.png" /></div>
-      <div
-          class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
-          <img src="../images/logos/icons8-whatsapp-96.png" /></div>
-      <div
-          class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
-          <img src="../images/logos/icons8-telegram-app-96.png" /></div>
-      <div
-          class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
-          <img src="../images/logos/icons8-gmail-96.png" /></div>
+    <!-- footer links -->
+      <div class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring   ring-cyan-500 hover:animate-shake hover:duration-500">
+          <a target="_blank" href="https://www.instagram.com/_sisako/"><img src="../images/logos/icons8-instagram-96.png" /></a>
+      </div>
+      <div class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
+        <a href="https://wa.link/r3gt39"><img src="../images/logos/icons8-whatsapp-96.png" /></div></a>
+      <div class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
+        <a target="_blank" href="https://t.me/sisako2002"><img src="../images/logos/icons8-telegram-app-96.png" /></div></a>
+      <div class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
+        <a href="mailto:sisako2002@gmail.com"><img src="../images/logos/icons8-gmail-96.png" /></div></a>
   </div>
+  <a href="https://wa.me/989331575385">Whatsapp Chat</a>
 </div>
 <div class="grid lg:grid-cols-2 border-2 w-full relative p-2 container mx-auto shadow-lg shadow-cyan-600 drop-shadow-lg rounded-md bg-sisakoGray">
   <div class="flex flex-col gap-y-6 mb-10">
@@ -798,7 +803,7 @@
               <path stroke-linecap="round" stroke-linejoin="round"
                   d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
           </svg>
-          <p>البرز - فردیس - شهرک صنعتی سیمین دشت - خیابان هشتم غربی - پلاک 146</p>
+          <p class="select-all">البرز - فردیس - شهرک صنعتی سیمین دشت - خیابان هشتم غربی - پلاک 146</p>
       </div>
       <div class="flex justify-start items-center gap-x-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-sisakoDarkBlue  stroke-2" fill="none" viewBox="0 0 24 24"
@@ -806,7 +811,7 @@
               <path stroke-linecap="round" stroke-linejoin="round"
                   d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
           </svg>
-          <p>026-357841</p>
+          <p class="select-all">026-357841</p>
       </div>
       <div class="flex justify-start items-center gap-x-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-sisakoDarkBlue" fill="none" viewBox="0 0 24 24"
@@ -814,7 +819,7 @@
               <path stroke-linecap="round" stroke-linejoin="round"
                   d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
           </svg>
-          <p>026-35748741</p>
+          <p class="select-all">026-35748741</p>
       </div>
       <div class="flex justify-start items-center gap-x-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-sisakoDarkBlue" fill="none" viewBox="0 0 24 24"
@@ -822,7 +827,7 @@
               <path stroke-linecap="round" stroke-linejoin="round"
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
-          <p>sisako2002@gmail.com</p>
+          <p class="select-all">sisako2002@gmail.com</p>
       </div>
   </div>
   <div class="flex justify-center items-center p-2">
@@ -844,7 +849,8 @@
 
 
 
-
+    <!-- my js for project -->
+    <script src="../js/myJs.js"></script>
     <!-- Alpine js -->
     <script src="//unpkg.com/alpinejs" defer></script>
     <!-- swiper js -->
