@@ -1,541 +1,863 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl" class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--  Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link href="../build/tailwind.css" rel="stylesheet" />
-    <title>sisako site</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="پرسکاری, مونتاژ,سیساکو, قالب سازی,قطعات خودرو,قطعات فلزی,pressing,sisako,welding,diecasting">
+  <meta name="description" content="pressing and assembly sheet metal parts">
+  <meta name="author" content="Arman Abasian">
+  <!--  Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="../build/tailwind.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/public/images/logos/logo.ico" />
+  <title>sisako | سیساکو </title>
 </head>
+
 <body class="font-samim bg-sisakoWhite text-sm sm:text-base md:text-lg ld:text-xl">
   <!-- scroll top btn -->
-  <button id="myBtn" class="fixed bottom-4 right-1 w-14 h-14 rounded-full bg-sisakoDarkBlue transition-all duration-1000 z-50 bg-opacity-60 opacity-60 flex justify-center items-center">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sisakoGray" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <button id="myBtn"
+    class="fixed bottom-4 right-1 w-14 h-14 rounded-full bg-sisakoDarkBlue transition-all duration-1000 z-50 bg-opacity-60 opacity-60 flex justify-center items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sisakoGray" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
     </svg>
   </button>
-    <!-- headerSection -->
-    <div class="w-full h-screen  px-8 py-6 xl:px-14 xl:p-18">
-        <!--headerSection card -->
-        <div class="relative w-full h-full container mx-auto bg-sisakoGray rounded-md shadow-lg drop-shadow-2xl shadow-cyan-500">
-            <!-- headerSection card loge -->
-            <div id="logo" class="h-1-6 justify-start items-start invisible"><img src="../images/logos/logo.png" class="w-20 p-2 sm:w-28 md:w-36 lg:w-44" alt="sisako" /></div>
-            <!-- headerSection card titles -->
-            <div class="h-1/6 flex justify-center items-center">
-                <p id="dicasting"class="flex-1 flex justify-center items-center py-4 transition  duration-500   text-sisakoDarkBlue  invisible  hover:text-sisakoLightBlue  cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"><a href="#discasting">قالب سازی</a></p>
-                <p id="pressing" class="flex-1 flex justify-center items-center py-4 transition  duration-500  text-sisakoDarkBlue invisible hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"><a href="#pressingg">پرسکاری</a></p>
-                <p id="assembly" class="flex-1 flex justify-center items-center py-4 transition  duration-500  text-sisakoDarkBlue invisible hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"><a href="#assemblyy">مونتاژ</a></p>
-            </div>
-            <!-- headerSection card sisako -->
-            <div class="h-3/6 flex justify-center items-center">
-                <p class="font-medium font-['Niconne',cursive] text-white  text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-800 cursor-pointer  transition-all duration-1000 ">sisako</p>
-            </div>
-            <!-- headerSection card ball -->
-            <a class="absolute w-12 h-12  md:w-16 md:h-16  rounded-full cursor-pointer animate-bounce bg-sisakoDarkBlue hover:bg-sisakoLightBlue transition-colors duration-300 left-2 bottom-2 flex justify-center items-center text-white hover:text-sisakoDarkBlue" href="#introduction">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-6 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-            </a>
+  <!-- headerSection -->
+  <div class="w-full h-screen  px-8 py-6 xl:px-14 xl:p-18">
+    <!--headerSection card -->
+    <div
+      class="relative w-full h-full container mx-auto bg-sisakoGray rounded-md shadow-lg drop-shadow-2xl shadow-cyan-500">
+      <!-- headerSection card loge -->
+      <div id="logo" class="h-1-6 justify-start items-start invisible"><img src="../images/logos/logo.png"
+          class="w-20 p-2 sm:w-28 md:w-36 lg:w-44" alt="sisako" /></div>
+      <!-- headerSection card titles -->
+      <div class="h-1/6 flex justify-center items-center">
+        <p id="dicasting"
+          class="flex-1 flex justify-center items-center py-4 transition  duration-500   text-sisakoDarkBlue  invisible  hover:text-sisakoLightBlue  cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+          <a href="#discasting">قالب سازی</a></p>
+        <p id="pressing"
+          class="flex-1 flex justify-center items-center py-4 transition  duration-500  text-sisakoDarkBlue invisible hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+          <a href="#pressingg">پرسکاری</a></p>
+        <p id="assembly"
+          class="flex-1 flex justify-center items-center py-4 transition  duration-500  text-sisakoDarkBlue invisible hover:text-sisakoLightBlue cursor-pointer hover:scale-110 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+          <a href="#assemblyy">مونتاژ</a></p>
+      </div>
+      <!-- headerSection card sisako -->
+      <div class="h-3/6 flex justify-center items-center">
+        <p
+          class="font-medium font-['Niconne',cursive] text-white  text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-800 cursor-pointer  transition-all duration-1000 ">
+          sisako</p>
+      </div>
+      <!-- headerSection card ball -->
+      <a class="absolute w-12 h-12  md:w-16 md:h-16  rounded-full cursor-pointer animate-bounce bg-sisakoDarkBlue hover:bg-sisakoLightBlue transition-colors duration-300 left-2 bottom-2 flex justify-center items-center text-white hover:text-sisakoDarkBlue"
+        href="#introduction">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-6 md:w-8" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- unitIntoduction&CompanyImages -->
+  <div class="px-8" id="introduction">
+    <div class="grid grid-cols-1 xl:h-[27rem] xl:grid-cols-2 justify-center items-center gap-4">
+      <!-- unitIntoduction&CompanyImages  unitIntoduction-->
+      <div class="container mx-auto max-w-2xl h-96 xl:h-full text-ellipsis shadow-lg shadow-cyan-600 drop-shadow-2xl "
+        x-data="{showcart:1}">
+        <!-- unitIntoduction&CompanyImages  unitIntoduction title-->
+        <div class="flex bg-sisakoDarkBlue p-1 rounded-md overflow-hidden  h-1/6">
+          <p @click="showcart =1"
+            :class="showcart ===1 ? 'bg-sisakoGray text-blue-900 rounded-sm ring-offset-2 ring-offset-blue-600 ring-white ring-2 outline-none' : ''"
+            class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">
+            قالب سازی</p>
+          <p @click="showcart =2"
+            :class="showcart ===2 ? 'bg-sisakoGray text-blue-900 rounded-sm ring-offset-2 ring-offset-blue-600 ring-white ring-2 outline-none' : ''"
+            class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">
+            پرسکاری</p>
+          <p @click="showcart =3"
+            :class="showcart ===3 ? 'bg-sisakoGray text-blue-900 rounded-sm ring-offset-2 ring-offset-blue-600 ring-white ring-2 outline-none' : ''"
+            class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">
+            مونتاژ</p>
         </div>
+        <!-- unitIntoduction&CompanyImages  unitIntoduction description-->
+        <div class="h-5/6 sm:text-base">
+          <div x-cloak x-show="showcart===1"
+            class="h-full p-2 shadow-md shadow-slate-600 rounded-md sm:grid  sm:grid-cols-2 sm:gap-x-4 overflow-hidden">
+            <img src="../images/units/diecasting.webp"
+              class="w-40 float-right rounded-md ml-2 sm:w-full sm:h-full sm:ml-0" alt="sisako">
+            <p class="overflow-clip"> طراحی و ساخت انواع قالب های کلاسیک و پروگرسیو قطعات سایز G3 ، G4 و G5 ، مطابق با
+              استاندارهای قالب سازی و با بهره گیری از مدرن ترین ماشین آلات ( فرز CNC ، وایرکات ، سنگ تخت و ماشین های فرز
+              و تراش منوال ) ، پرسنل مجرب و متخصص در واحد طراحی و ساخت قالب شرکت سیمین صنعت کوشا صورت می گیرد .
+            </p>
+          </div>
+
+          <div x-cloak x-show="showcart===2"
+            class="h-full p-2 shadow-md shadow-slate-600 rounded-md sm:grid sm:grid-cols-2 sm:gap-x-4 overflow-hidden">
+            <img src="../images/units/perssing.webp"
+              class="w-40 float-right rounded-md ml-2 sm:w-full sm:h-full sm:ml-0" alt="sisako">
+            <p class="overflow-clip">شرکت سیمین صنعت کوشا مجهز به بیش از40 دستگاه پرس است. پرس های مورد استفاده، از
+              بهترین برند های موجود در کشور ایران، چین و ... خریداری شده اند که طراحی وساخت آن ها مطابق
+              استاندارد های روز دنیا است.
+              سیستم عملکرد دستگاه های موجود بصورت ضربه ای، ضربه ای سرعت بالا و هیدرولیک است که
+              دارای تناژ 16 تا 1200 تن هستند.
+              این شرکت با تجربه ی فراوان در زمینه ی پرسکاری، در حال تولید انواع قطعات فلزی مرتبط با
+              خودرو و لوازم خانگی است.
+
+
+            </p>
+          </div>
+
+          <div x-cloak x-show="showcart===3"
+            class="h-full p-2 shadow-md shadow-slate-600 rounded-md sm:grid sm:grid-cols-2 sm:gap-x-4 overflow-hidden">
+            <img src="../images/units/welding.webp" class="w-40 float-right rounded-md ml-2 sm:w-full sm:h-full sm:ml-0"
+              alt="sisako">
+            <p class="overflow-clip">بخش مونتاژ شرکت دارای ده ها دستگاه جوش،پرس جوش،گان و جوش اتوماتیک است. دراین بخش
+              انواع قطعات فلزی خودرو شامل: دسته موتور،کمک فنر،داشبورد و ... مونتاژ می شوند.
+              غالبا فرآیند های جوش CO2 و برق , جوش مقاومتی در مونتاژ قطعات این شرکت مورد استفاده قرار می گیرند.
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <!--CompanyImages-->
+      <div
+        class="container mx-auto flex items-center justify-center scrollbar-default shadow-lg shadow-cyan-600 drop-shadow-2xl rounded-md bg-sisakoGray h-52 xl:h-full">
+        <div class="flex gap-2 overflow-auto scrollbar-hide cursor-grabbing">
+          <img src="../images/achievements/auditors.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+          <img src="../images/achievements/companyOutSide.webp"
+            class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+          <img src="../images/achievements/exhibition.webp"
+            class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+          <img src="../images/achievements/sazehManager.webp"
+            class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+          <img src="../images/achievements/sisakoBilboard.webp"
+            class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+          <img src="../images/achievements/sisakoManager.webp"
+            class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+          <img src="../images/achievements/wholePersonnel.webp"
+            class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+          <img src="../images/achievements/father&boys.webp"
+            class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
+
+        </div>
+      </div>
     </div>
 
 
 
 
 
-    <!-- unitIntoduction&CompanyImages -->
-    <div class="px-8" id="introduction">
-    <div class="grid grid-cols-1 xl:h-[27rem] xl:grid-cols-2 justify-center items-center gap-4">
-        <!-- unitIntoduction&CompanyImages  unitIntoduction-->
-            <div class="container mx-auto max-w-2xl h-96 xl:h-full text-ellipsis shadow-lg shadow-cyan-600 drop-shadow-2xl " x-data="{showcart:1}">
-                <!-- unitIntoduction&CompanyImages  unitIntoduction title-->
-                <div class="flex bg-sisakoDarkBlue p-1 rounded-md overflow-hidden  h-1/6">
-                    <p @click="showcart =1" :class="showcart ===1 ? 'bg-sisakoGray text-blue-900 rounded-sm ring-offset-2 ring-offset-blue-600 ring-white ring-2 outline-none' : ''"  class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">قالب سازی</p>
-                    <p @click="showcart =2" :class="showcart ===2 ? 'bg-sisakoGray text-blue-900 rounded-sm ring-offset-2 ring-offset-blue-600 ring-white ring-2 outline-none' : ''" class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">پرسکاری</p>
-                    <p @click="showcart =3"  :class="showcart ===3 ? 'bg-sisakoGray text-blue-900 rounded-sm ring-offset-2 ring-offset-blue-600 ring-white ring-2 outline-none' : ''" class="flex-1 flex justify-center items-center p-3 text-white cursor-pointer hover:bg-sisakoGray hover:text-sisakoDarkBlue hover:rounded-sm hover:ring-offset-2 hover:ring-offset-blue-600 hover:ring-white hover:ring-2 hover:outline-none">مونتاژ</p>
-                </div>
-                    <!-- unitIntoduction&CompanyImages  unitIntoduction description-->
-                <div class="h-5/6 sm:text-base">
-                    <div x-cloak x-show="showcart===1" class="h-full p-2 shadow-md shadow-slate-600 rounded-md sm:grid  sm:grid-cols-2 sm:gap-x-4 overflow-hidden">
-                        <img src="../images/units/diecasting.webp" class="w-40 float-right rounded-md ml-2 sm:w-full sm:h-full sm:ml-0" alt="sisako">
-                        <p class="overflow-clip">واحد قالبسازی شرکت سیمین صنعت کوشا، توانایی طراحی وساخت هر نوع قالب سنبه ماتریس
-                          را دارد. این بخش دارای انواع دستگاه های CNC ، وایرکات، تراش، سوپر دریل ، دریل رادیال،
-                          سنگ و ... است که این موضوع منجر به ساختن قالب ها بدون نیاز به برون سپاری می گردد.
-                          سیمین صنعت کوشا عملیات تعمیرات و نوسازی قالب های خود و سایر شرکت ها را بصورت مستمر
-                          انجام می دهد. همواره اولویت این شرکت ساخت قالب ها با بالاترین کیفیت و بهترین مواد اولیه است.
-                           </p>
-                    </div>
-            
-                    <div x-cloak x-show="showcart===2" class="h-full p-2 shadow-md shadow-slate-600 rounded-md sm:grid sm:grid-cols-2 sm:gap-x-4 overflow-hidden">
-                        <img src="../images/units/perssing.webp" class="w-40 float-right rounded-md ml-2 sm:w-full sm:h-full sm:ml-0" alt="sisako">
-                        <p class="overflow-clip">شرکت سیمین صنعت کوشا مجهز به بیش از40 دستگاه پرس است. پرس های مورد استفاده، از
-                          بهترین برند های موجود در کشور ایران، چین و ... خریداری شده اند که طراحی وساخت آن ها مطابق
-                          استاندارد های روز دنیا است.
-                          سیستم عملکرد دستگاه های موجود بصورت ضربه ای، ضربه ای سرعت بالا و هیدرولیک است که 
-                          دارای تناژ 16 تا 1200 تن هستند.
-                          این شرکت با تجربه ی فراوان در زمینه ی پرسکاری، در حال تولید انواع قطعات فلزی مرتبط با 
-                          خودرو و لوازم خانگی است. 
-                         
-                                
-                        </p>
-                    </div>
-        
-                    <div x-cloak x-show="showcart===3" class="h-full p-2 shadow-md shadow-slate-600 rounded-md sm:grid sm:grid-cols-2 sm:gap-x-4 overflow-hidden">
-                        <img src="../images/units/welding.webp" class="w-40 float-right rounded-md ml-2 sm:w-full sm:h-full sm:ml-0" alt="sisako">
-                        <p class="overflow-clip">بخش مونتاژ شرکت دارای ده ها دستگاه جوش،پرس جوش،گان و جوش اتوماتیک است. دراین بخش
-                          انواع قطعات فلزی خودرو شامل: دسته موتور،کمک فنر،داشبورد و ... مونتاژ می شوند.
-                          غالبا فرآیند های جوش CO2 و برق در مونتاژ قطعات این شرکت مورد استفاده قرار می گیرند.
-                           
-                        </p>
-                    </div>
-        
-                </div>
-            </div>
-            <!--CompanyImages-->
-             <div class="container mx-auto flex items-center justify-center scrollbar-default shadow-lg shadow-cyan-600 drop-shadow-2xl rounded-md bg-sisakoGray h-52 xl:h-full">
-                <div class="flex gap-2 overflow-auto scrollbar-hide cursor-grabbing">
-                  <img src="../images/achievements/auditors.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
-                  <img src="../images/achievements/companyOutSide.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
-                  <img src="../images/achievements/exhibition.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
-                  <img src="../images/achievements/sazehManager.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
-                  <img src="../images/achievements/sisakoBilboard.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
-                  <img src="../images/achievements/sisakoManager.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
-                  <img src="../images/achievements/wholePersonnel.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
-                  <img src="../images/achievements/father&boys.webp" class="w-44 h-44 xl:w-80 xl:h-80 rounded-md aspect-square" />
-                  
-                </div>
-            </div>
-  </div>
 
 
 
 
+    <!--productsSlidersContainer-->
+    <div class="grid lg:grid-cols-2 justify-center content-center items-center gap-2 w-full mt-4">
 
-
-
-
-
-     <!--productsSlidersContainer-->
- <div class="grid lg:grid-cols-2 justify-center content-center items-center gap-2 w-full mt-4" >
-
-    <!--productsSlidersContainer coverProducts-->
-    <div class="mt-2 container self-center flex justify-center items-center text-[7px] sm:text-xs">
-     <div class="w-full h-40 swiper mySwiper max-w-xl shadow-xl shadow-slate-900 flex items-center justify-center bg-white rounded-md">
-         <div class="swiper-wrapper">
-           <!--productsSlidersContainer coverProducts slider 1-->
-           <div class="swiper-slide content-center items-center">
-             <div class="flex gap-2 justify-center items-start w-full h-full">
-               <div class="flex-1 felx justify-center items-center w-full h-full">
-                   <img class="object-contain w-full h-full" src="../images/products/cover/XU-..webp" alt="image"/>
-               </div>
-               <div class="flex-1 flex flex-col gap-2 justify-center w-full h-full">
-                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold  text-sisakoLightBlue"> کاور کلاچ XU+ </p></div>
-                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue">دنا و آریسان </p></div>
-                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
-               </div> 
-             </div>
-           </div>
-           <!--productsSlidersContainer coverProducts slider 2-->
-           <div class="swiper-slide ">
-             <div class="flex gap-2 justify-center items-start w-full h-full">
-               <div class="flex-1 felx justify-center items-center w-full h-full">
-                   <img class="object-contain w-full h-full" src="../images/products/cover/405-Jc.webp" alt="image"/>
-               </div>
-               <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ  </p></div>
-                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
-                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت جهان کلاچ </p></div>
-               </div> 
-             </div>
-           </div>
-             <!--productsSlidersContainer coverProducts slider 3-->
-             <div class="swiper-slide">
-                 <div class="flex gap-2 justify-center items-start w-full h-full">
-                   <div class="flex-1 felx justify-center items-center w-full h-full">
-                       <img class="object-contain w-full h-full" src="../images/products/cover/metalic.webp" alt="image"/>
-                   </div>
-                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> متالیک پلیت </p></div>
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پراید  </p></div>
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
-                   </div> 
-                 </div>
-               </div>
-             <!--productsSlidersContainer coverProducts slider 4-->
-             <div class="swiper-slide">
-                 <div class="flex gap-2 justify-center items-start w-full h-full">
-                   <div class="flex-1 felx justify-center items-center w-full h-full">
-                       <img class="object-contain w-full h-full" src="../images/products/cover/peykan.webp" alt="image"/>
-                   </div>
-                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ  </p></div>
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue">پیکان</p></div>
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت جهان کلاچ </p></div>
-                   </div> 
-                 </div>
-               </div>
-             <!--productsSlidersContainer coverProducts slider 5-->
-             <div class="swiper-slide">
-                 <div class="flex gap-2 justify-center items-start w-full h-full">
-                   <div class="flex-1 felx justify-center items-center w-full h-full">
-                       <img class="object-contain w-full h-full" src="../images/products/cover/prid-jc.webp" alt="image"/>
-                   </div>
-                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ  </p></div>
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue">پراید</p></div>
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت جهان کلاچ </p></div>
-                   </div> 
-                 </div>
-               </div>
-               <!--productsSlidersContainer coverProducts slider 6-->
-               <div class="swiper-slide">
-                 <div class="flex gap-2 justify-center items-start w-full h-full">
-                   <div class="flex-1 felx justify-center items-center w-full h-full">
-                       <img class="object-contain w-full h-full" src="../images/products/cover/prid-pc.webp" alt="image"/>
-                   </div>
-                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ  </p></div>
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پراید</p></div>
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
-                   </div> 
-                 </div>
-               </div>
-               <!--productsSlidersContainer coverProducts slider 7-->
-               <div class="swiper-slide">
-                <div class="flex gap-2 justify-center items-start w-full h-full">
-                  <div class="flex-1 felx justify-center items-center w-full h-full">
-                      <img class="object-contain w-full h-full" src="../images/products/cover/tiba.webp" alt="image"/>
-                  </div>
-                  <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                      <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ </p></div>
-                      <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue">تیبا  </p></div>
-                      <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
-                  </div> 
-                </div>
-              </div>
-              <!--productsSlidersContainer coverProducts slider 8-->
-              <div class="swiper-slide">
-                <div class="flex gap-2 justify-center items-start w-full h-full">
-                  <div class="flex-1 felx justify-center items-center w-full h-full">
-                      <img class="object-contain w-full h-full" src="../images/products/cover/206.webp" alt="image"/>
-                  </div>
-                  <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                      <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کاور کلاچ  </p></div>
-                      <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 206 </p></div>
-                      <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p></div>
-                  </div> 
-                </div>
-              </div>
-       </div>
-       <div class="swiper-pagination "></div>
-       </div>
-   </div>
-   
-
-   <!--productsSlidersContainer faravari products-->
-   <div class="mt-2 container flex-1 content-center items-center text-[6px] sm:text-xs">
-   <div class="w-full h-40 swiper mySwiper max-w-xl shadow-xl shadow-slate-900 flex items-center justify-center bg-white rounded-md">
-       <div class="swiper-wrapper">
-         <!--slider 1-->
-         <div class="swiper-slide">
-           <div class="flex gap-2 justify-center items-start w-full h-full">
-             <div class="flex-1 felx justify-center items-center w-full h-full">
-                 <img class="object-contain w-full h-full" src="../images/products/faravari/photo_2018-04-30_09-48-422 - Copy.webp" alt="image"/>
-             </div>
-             <div class="flex-1 flex flex-col gap-2 justify-center w-full h-full">
-                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue">   اسپرینگ سیت کمک فنر جلو</p></div>
-                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 206 </p></div>
-                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت فرآوری و ساخت </p></div>
-             </div> 
-           </div>
-         </div>
-         <!--slider 2-->
-         <div class="swiper-slide">
-           <div class="flex gap-2 justify-center items-start w-full h-full">
-             <div class="flex-1 felx justify-center items-center w-full h-full">
-                 <img class="object-contain w-full h-full" src="../images/products/faravari/P1010653 - Copy.webp" alt="image"/>
-             </div>
-             <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue">  اسپرینگ سیت کمک فنر جلو </p></div>
-                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پراید  </p></div>
-                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت فرآوری و ساخت </p></div>
-             </div> 
-           </div>
-         </div>
-           <!--slider 3-->
-           <div class="swiper-slide">
-               <div class="flex gap-2 justify-center items-start w-full h-full">
-                 <div class="flex-1 felx justify-center items-center w-full h-full">
-                     <img class="object-contain w-full h-full" src="../images/products/faravari/P1010651 - Copy.webp" alt="image"/>
-                 </div>
-                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue">  اسپرینگ سیت کمک فنر عقب  </p></div>
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پراید </p></div>
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت فرآوری و ساخت </p></div>
-                 </div> 
-               </div>
-             </div>
-           <!--slider 4-->
-           <div class="swiper-slide">
-               <div class="flex gap-2 justify-center items-start w-full h-full">
-                 <div class="flex-1 felx justify-center items-center w-full h-full">
-                     <img class="object-contain w-full h-full" src="../images/products/faravari/20181128_104653.webp" alt="image"/>
-                 </div>
-                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue">   براکت ناکل کمک فنر جلو </p></div>
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue">  تیبا </p></div>
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت فرآوری و ساخت </p></div>
-                 </div> 
-               </div>
-             </div>
-           <!--slider 5-->
-           <div class="swiper-slide">
-               <div class="flex gap-2 justify-center items-start w-full h-full">
-                 <div class="flex-1 felx justify-center items-center w-full h-full">
-                     <img class="object-contain w-full h-full" src="../images/products/faravari/20200309_104428.webp" alt="image"/>
-                 </div>
-                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue">   براکت ناکل کمک فنر جلو  </p></div>
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> ال 90 </p></div>
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت فرآوری و ساخت </p></div>
-                 </div> 
-               </div>
-             </div>
-     </div>
-     <div class="swiper-pagination "></div>
-     </div>
-   </div>
-   
-     
-   <!--productsSlidersContainer sazeh products-->
-   <div class="mt-2 container flex-1 content-center items-center text-[7px] sm:text-xs">
-     <div class="w-full h-40 swiper mySwiper max-w-xl shadow-xl shadow-slate-900 flex items-center justify-center bg-white rounded-md">
-         <div class="swiper-wrapper">
-           <!--slider 1-->
-           <div class="swiper-slide">
-             <div class="flex gap-2 justify-center items-start w-full h-full">
-               <div class="flex-1 felx justify-center items-center w-full h-full">
-                   <img class="object-contain w-full h-full" src="../images/products/sazeh/ecu.webp" alt="image"/>
-               </div>
-               <div class="flex-1 flex flex-col gap-2 justify-center w-full h-full">
-                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> براکت ECU </p></div>
-                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> کوییک</p></div>
-                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> سازه گستر سایپا </p></div>
-               </div> 
-             </div>
-           </div>
-           <!--slider 2-->
-           <div class="swiper-slide">
-             <div class="flex gap-2 justify-center items-start w-full h-full">
-               <div class="flex-1 felx justify-center items-center w-full h-full">
-                   <img class="object-contain w-full h-full" src="../images/products/sazeh/frame.webp" alt="image"/>
-               </div>
-               <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> تقویتی شاسی CNG </p></div>
-                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> تیبا </p></div>
-                   <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت سازه گستر سایپا </p></div>
-               </div> 
-             </div>
-           </div>
-             <!--slider 3-->
-             <div class="swiper-slide">
-                 <div class="flex gap-2 justify-center items-start w-full h-full">
-                   <div class="flex-1 felx justify-center items-center w-full h-full">
-                       <img class="object-contain w-full h-full" src="../images/products/sazeh/intre connection.webp" alt="image"/>
-                   </div>
-                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> براکت سنسور ایربگ </p></div>
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> شاهین </p></div>
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue">  شرکت سازه گستر سایپا </p></div>
-                   </div> 
-                 </div>
-               </div>
-             <!--slider 4-->
-             <div class="swiper-slide">
-                 <div class="flex gap-2 justify-center items-start w-full h-full">
-                   <div class="flex-1 felx justify-center items-center w-full h-full">
-                       <img class="object-contain w-full h-full" src="../images/products/sazeh/lola.webp" alt="image"/>
-                   </div>
-                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> براکت مهره لولا درب جلو </p></div>
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پراید </p></div>
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت سازه گستر سایپا </p></div>
-                   </div> 
-                 </div>
-               </div>
-             <!--slider 5-->
-             <div class="swiper-slide">
-                 <div class="flex gap-2 justify-center items-start w-full h-full">
-                   <div class="flex-1 felx justify-center items-center w-full h-full">
-                       <img class="object-contain w-full h-full" src="../images/products/sazeh/nehagdarandeh.webp" alt="image"/>
-                   </div>
-                   <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> براکت ایربگ </p></div>
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> سمند </p></div>
-                       <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت گسترش قطعه میلاد </p></div>
-                   </div> 
-                 </div>
-               </div>
-               <!--slider 7-->
-               <div class="swiper-slide">
-                <div class="flex gap-2 justify-center items-start w-full h-full">
-                  <div class="flex-1 felx justify-center items-center w-full h-full">
-                      <img class="object-contain w-full h-full" src="../images/products/sazeh/otaghbar.webp" alt="image"/>
-                  </div>
-                  <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                      <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> پایه اتاق بار شماره 1 </p></div>
-                      <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> وانت نیسان </p></div>
-                      <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت ایران کاوه سایپا </p></div>
-                  </div> 
-                </div>
-              </div>
-              <!--slider 8-->
-              <div class="swiper-slide">
-                <div class="flex gap-2 justify-center items-start w-full h-full">
-                  <div class="flex-1 felx justify-center items-center w-full h-full">
-                      <img class="object-contain w-full h-full" src="../images/products/sazeh/rienf.webp" alt="image"/>
-                  </div>
-                  <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                      <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> تقویتی داشبورد چپ  </p></div>
-                      <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> کوییک </p></div>
-                      <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت سازه گستر سایپا </p></div>
-                  </div> 
-                </div>
-              </div>
-       </div>
-       <div class="swiper-pagination "></div>
-       </div>
-   </div>
-   
-       
-   <!--productsSlidersContainer pol products-->
-   <div class="mt-2 container flex-1 content-center items-center text-[7px] sm:text-xs">
-   <div class="w-full h-40 swiper mySwiper max-w-xl shadow-xl shadow-slate-900 flex items-center justify-center bg-white rounded-md">
-       <div class="swiper-wrapper">
-         <!--slider 2-->
-         <div class="swiper-slide">
-           <div class="flex gap-2 justify-center items-start w-full h-full">
-             <div class="flex-1 felx justify-center items-center w-full h-full">
-                 <img class="object-contain w-full h-full" src="../images/products/pol/photo_2022-04-09_08-03-46.webp" alt="image"/>
-             </div>
-             <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> کفشک لنت  </p></div>
-                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پراید</p></div>
-                 <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پارس لنت </p></div>
-             </div> 
-           </div>
-         </div>
-           <!--slider 3-->
-           <div class="swiper-slide">
-               <div class="flex gap-2 justify-center items-start w-full h-full">
-                 <div class="flex-1 felx justify-center items-center w-full h-full">
-                     <img class="object-contain w-full h-full" src="../images/products/pol/80130-1.webp" alt="image"/>
-                 </div>
-                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue">کفشک لنت </p></div>
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> سمند </p></div>
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پارس لنت </p></div>
-                 </div> 
-               </div>
-             </div>
-           <!--slider 4-->
-           <div class="swiper-slide">
-               <div class="flex gap-2 justify-center items-start w-full h-full">
-                 <div class="flex-1 felx justify-center items-center w-full h-full">
-                     <img class="object-contain w-full h-full" src="../images/products/pol/P1010488.webp" alt="image"/>
-                 </div>
-                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> پلیت پیچ دار دسته موتور شماره 1 </p></div>
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پراید </p></div>
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پل آستارا </p></div>
-                 </div> 
-               </div>
-             </div>
-           <!--slider 5-->
-           <div class="swiper-slide">
-               <div class="flex gap-2 justify-center items-start w-full h-full">
-                 <div class="flex-1 felx justify-center items-center w-full h-full">
-                     <img class="object-contain w-full h-full" src="../images/products/pol/P1010513 - Copy.webp" alt="image"/>
-                 </div>
-                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> فلز دسته موتور شماره 3 </p></div>
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> کوییک </p></div>
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پل آستارا </p></div>
-                 </div> 
-               </div>
-             </div>
-             <!--slider 6-->
-             <div class="swiper-slide">
-               <div class="flex gap-2 justify-center items-start w-full h-full">
-                 <div class="flex-1 felx justify-center items-center w-full h-full">
-                     <img class="object-contain w-full h-full" src="../images/products/pol/P1010515 - Copy.webp" alt="image"/>
-                 </div>
-                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue">  فلز دسته موتور شماره 2 </p></div>
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> کوییک </p></div>
-                     <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پل آستارا </p></div>
-                 </div> 
-               </div>
-             </div>
-             <!--slider 7-->
-             <div class="swiper-slide">
+      <!--productsSlidersContainer coverProducts-->
+      <div class="mt-2 container self-center flex justify-center items-center text-[7px] sm:text-xs">
+        <div
+          class="w-full h-40 swiper mySwiper max-w-xl shadow-xl shadow-slate-900 flex items-center justify-center bg-white rounded-md">
+          <div class="swiper-wrapper">
+            <!--productsSlidersContainer coverProducts slider 1-->
+            <div class="swiper-slide content-center items-center">
               <div class="flex gap-2 justify-center items-start w-full h-full">
                 <div class="flex-1 felx justify-center items-center w-full h-full">
-                    <img class="object-contain w-full h-full" src="../images/products/pol/P1010540 - Copy.webp" alt="image"/>
+                  <img class="object-contain w-full h-full" src="../images/products/cover/XU-..webp" alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold  text-sisakoLightBlue"> کاور کلاچ XU+ </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue">دنا و آریسان </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--productsSlidersContainer coverProducts slider 2-->
+            <div class="swiper-slide ">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/cover/405-Jc.webp" alt="image" />
                 </div>
                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                    <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> فلز دو سوراخ ضربه گیر  </p></div>
-                    <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
-                    <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پل آستارا </p></div>
-                </div> 
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> کاور کلاچ </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> پژو 405 </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت جهان کلاچ </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--productsSlidersContainer coverProducts slider 3-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/cover/metalic.webp" alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> متالیک پلیت </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> پراید </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--productsSlidersContainer coverProducts slider 4-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/cover/peykan.webp" alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> کاور کلاچ </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue">پیکان</p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت جهان کلاچ </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--productsSlidersContainer coverProducts slider 5-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/cover/prid-jc.webp" alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> کاور کلاچ </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue">پراید</p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت جهان کلاچ </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--productsSlidersContainer coverProducts slider 6-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/cover/prid-pc.webp" alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> کاور کلاچ </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> پراید</p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--productsSlidersContainer coverProducts slider 7-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/cover/tiba.webp" alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> کاور کلاچ </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue">تیبا </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--productsSlidersContainer coverProducts slider 8-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/cover/206.webp" alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> کاور کلاچ </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> پژو 206 </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت پایا کلاچ </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination "></div>
+        </div>
+      </div>
+
+
+      <!--productsSlidersContainer faravari products-->
+      <div class="mt-2 container flex-1 content-center items-center text-[6px] sm:text-xs">
+        <div
+          class="w-full h-40 swiper mySwiper max-w-xl shadow-xl shadow-slate-900 flex items-center justify-center bg-white rounded-md">
+          <div class="swiper-wrapper">
+            <!--slider 1-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full"
+                    src="../images/products/faravari/photo_2018-04-30_09-48-422 - Copy.webp" alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> اسپرینگ سیت کمک فنر جلو</p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> پژو 206 </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت فرآوری و ساخت </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 2-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/faravari/P1010653 - Copy.webp"
+                    alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> اسپرینگ سیت کمک فنر جلو </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> پراید </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت فرآوری و ساخت </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 3-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/faravari/P1010651 - Copy.webp"
+                    alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> اسپرینگ سیت کمک فنر عقب </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> پراید </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت فرآوری و ساخت </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 4-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/faravari/20181128_104653.webp"
+                    alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> براکت ناکل کمک فنر جلو </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> تیبا </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت فرآوری و ساخت </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 5-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/faravari/20200309_104428.webp"
+                    alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> براکت ناکل کمک فنر جلو </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> ال 90 </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت فرآوری و ساخت </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination "></div>
+        </div>
+      </div>
+
+
+      <!--productsSlidersContainer sazeh products-->
+      <div class="mt-2 container flex-1 content-center items-center text-[7px] sm:text-xs">
+        <div
+          class="w-full h-40 swiper mySwiper max-w-xl shadow-xl shadow-slate-900 flex items-center justify-center bg-white rounded-md">
+          <div class="swiper-wrapper">
+            <!--slider 1-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/sazeh/ecu.webp" alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> براکت ECU </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> کوییک</p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> سازه گستر سایپا </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 2-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/sazeh/frame.webp" alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> تقویتی شاسی CNG </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> تیبا </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت سازه گستر سایپا </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 3-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/sazeh/intre connection.webp"
+                    alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> براکت سنسور ایربگ </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شاهین </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت سازه گستر سایپا </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 4-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/sazeh/lola.webp" alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> براکت مهره لولا درب جلو </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> پراید </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت سازه گستر سایپا </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 5-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/sazeh/nehagdarandeh.webp"
+                    alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> براکت ایربگ </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> سمند </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت گسترش قطعه میلاد </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 7-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/sazeh/otaghbar.webp" alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> پایه اتاق بار شماره 1 </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> وانت نیسان </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت ایران کاوه سایپا </p>
+                  </div>
+                </div>
               </div>
             </div>
             <!--slider 8-->
             <div class="swiper-slide">
               <div class="flex gap-2 justify-center items-start w-full h-full">
                 <div class="flex-1 felx justify-center items-center w-full h-full">
-                    <img class="object-contain w-full h-full" src="../images/products/pol/P1010543 - Copy.webp" alt="image"/>
+                  <img class="object-contain w-full h-full" src="../images/products/sazeh/rienf.webp" alt="image" />
                 </div>
                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                    <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> واشر ستاره ای </p></div>
-                    <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> پژو 405 </p></div>
-                    <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پل آستارا صنعت </p></div>
-                </div> 
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> تقویتی داشبورد چپ </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> کوییک </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت سازه گستر سایپا </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination "></div>
+        </div>
+      </div>
+
+
+      <!--productsSlidersContainer pol products-->
+      <div class="mt-2 container flex-1 content-center items-center text-[7px] sm:text-xs">
+        <div
+          class="w-full h-40 swiper mySwiper max-w-xl shadow-xl shadow-slate-900 flex items-center justify-center bg-white rounded-md">
+          <div class="swiper-wrapper">
+            <!--slider 2-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/pol/photo_2022-04-09_08-03-46.webp"
+                    alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> کفشک لنت </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> پراید</p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت پارس لنت </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 3-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/pol/80130-1.webp" alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue">کفشک لنت </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> سمند </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت پارس لنت </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 4-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/pol/P1010488.webp" alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> پلیت پیچ دار دسته موتور شماره 1 </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> پراید </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت پل آستارا </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 5-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/pol/P1010513 - Copy.webp"
+                    alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> فلز دسته موتور شماره 3 </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> کوییک </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت پل آستارا </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 6-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/pol/P1010515 - Copy.webp"
+                    alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> فلز دسته موتور شماره 2 </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> کوییک </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت پل آستارا </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 7-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/pol/P1010540 - Copy.webp"
+                    alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> فلز دو سوراخ ضربه گیر </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> پژو 405 </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت پل آستارا </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slider 8-->
+            <div class="swiper-slide">
+              <div class="flex gap-2 justify-center items-start w-full h-full">
+                <div class="flex-1 felx justify-center items-center w-full h-full">
+                  <img class="object-contain w-full h-full" src="../images/products/pol/P1010543 - Copy.webp"
+                    alt="image" />
+                </div>
+                <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> واشر ستاره ای </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> پژو 405 </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت پل آستارا صنعت </p>
+                  </div>
+                </div>
               </div>
             </div>
             <!--slider 9-->
             <div class="swiper-slide">
               <div class="flex gap-2 justify-center items-start w-full h-full">
                 <div class="flex-1 felx justify-center items-center w-full h-full">
-                    <img class="object-contain w-full h-full" src="../images/products/pol/P1010700 - Copy.webp" alt="image"/>
+                  <img class="object-contain w-full h-full" src="../images/products/pol/P1010700 - Copy.webp"
+                    alt="image" />
                 </div>
                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                    <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> یو پیچ دار ضربه گیر </p></div>
-                    <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> وانت نیسان </p></div>
-                    <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پل آستارا </p></div>
-                </div> 
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> یو پیچ دار ضربه گیر </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> وانت نیسان </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت پل آستارا </p>
+                  </div>
+                </div>
               </div>
             </div>
             <!--slider 10-->
             <div class="swiper-slide">
               <div class="flex gap-2 justify-center items-start w-full h-full">
                 <div class="flex-1 felx justify-center items-center w-full h-full">
-                    <img class="object-contain w-full h-full" src="../images/products/pol/P1030170 - Copy.webp" alt="image"/>
+                  <img class="object-contain w-full h-full" src="../images/products/pol/P1030170 - Copy.webp"
+                    alt="image" />
                 </div>
                 <div class="flex-1 flex flex-col gap-2 justify-center   w-full h-full">
-                    <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام محصول : </p><p class="font-bold text-sisakoLightBlue"> براکت دو مهره شماره 1 </p></div>
-                    <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام خودرو : </p><p class="font-bold text-sisakoLightBlue"> کوییک </p></div>
-                    <div class="flex justify-start items-center"><p class="text-sisakoDarkBlue">نام مشتری : </p><p class="font-bold text-sisakoLightBlue"> شرکت پل آستارا </p></div>
-                </div> 
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام محصول : </p>
+                    <p class="font-bold text-sisakoLightBlue"> براکت دو مهره شماره 1 </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام خودرو : </p>
+                    <p class="font-bold text-sisakoLightBlue"> کوییک </p>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <p class="text-sisakoDarkBlue">نام مشتری : </p>
+                    <p class="font-bold text-sisakoLightBlue"> شرکت پل آستارا </p>
+                  </div>
+                </div>
               </div>
             </div>
-     </div>
-     <div class="swiper-pagination "></div>
-     </div>
-   </div> 
-</div>
+          </div>
+          <div class="swiper-pagination "></div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -545,319 +867,417 @@
 
 
 
-  <!--unitImagesContainer-->
-<div>
-  <!--unitImagesContainer diecasting-->
-  <div class="p-4 my-4" id="discasting">
-    <!--unitImagesContainer diecasting  unitName -->
-    <p class="border-b-2 pb-1 font-bold text-base  mb-8 border-sisakoLightBlue text-sisakoDarkBlue">واحد قالب سازی</p>
-    <!-- unitImagesContainer diecasting  unitImages -->
-      <div class="columns-xs">
-        <!-- unitImagesContainer diecasting  unitImages image1-->
+    <!--unitImagesContainer-->
+    <div>
+      <!--unitImagesContainer diecasting-->
+      <div class="p-4 my-4" id="discasting">
+        <!--unitImagesContainer diecasting  unitName -->
+        <p class="border-b-2 pb-1 font-bold text-base  mb-8 border-sisakoLightBlue text-sisakoDarkBlue">واحد قالب سازی
+        </p>
+        <!-- unitImagesContainer diecasting  unitImages -->
+        <div class="columns-xs">
+          <!-- unitImagesContainer diecasting  unitImages image1-->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/diecasting/CNC1.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg ">فرز VMC CNC</p>
-                <p class="text-sm ">این مجموعه دارای قدمتی 20 ساله است و در این مدت توانسته با کسب تجربه و دانش مناسب قالب ها و قطعات مناسبی طراحی کند</p>
-              </div>
+            <img src="../images/diecasting/CNC1.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg ">فرز VMC CNC</p>
+              <p class="text-sm ">ابعاد کارگیر ماشین : 1100*600*600 mm محصول کشور تایوان </p>
+            </div>
           </div>
           <!-- unitImagesContainer diecasting  unitImages image2 -->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/diecasting/CNC2.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text ">John Doe</p>
-                <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius aperiam mollitia ducimus aut doloremque, reiciendis, earum iusto excepturi, esse corrupti ad repellat sequi voluptates dolor sint. Mollitia, magni corporis.</p>
-              </div>
+            <img src="../images/diecasting/CNC2.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">فرز CNC سه محور مدل BLIN </p>
+              <p class="text-sm">ابعاد کارگیر ماشین : 800*550*550 mm محصول کشور چین </p>
+            </div>
           </div>
           <!-- unitImagesContainer diecasting  unitImages image3 -->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/diecasting/CNC3.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text ">John Doe</p>
-                <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius aperiam mollitia ducimus aut doloremque, reiciendis, earum iusto excepturi, esse corrupti ad repellat sequi voluptates dolor sint. Mollitia, magni corporis.</p>
-              </div>
+            <img src="../images/diecasting/CNC3.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">فرز CNC سه محور مدل DECKEL MAHO</p>
+              <p class="text-sm">ابعاد کارگیر ماشین : 500*400*500 mm محصول کشور آلمان </p>
+            </div>
           </div>
           <!-- unitImagesContainer diecasting  unitImages image4 -->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/diecasting/Driil.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text ">John Doe</p>
-                <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius aperiam mollitia ducimus aut doloremque, reiciendis, earum iusto excepturi, esse corrupti ad repellat sequi voluptates dolor sint. Mollitia, magni corporis.</p>
-              </div>
+            <img src="../images/diecasting/Driil.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">دریل رادیال Z3050160 مدل WDM و دریل رادیال Z3050160 مدل ZJ </p>
+              <p class="text-sm">محصول مشترک چک و چین </p>
+            </div>
           </div>
           <!-- unitImagesContainer diecasting  unitImages image5 -->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/diecasting/machinig.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text ">John Doe</p>
-                <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius aperiam mollitia ducimus aut doloremque, reiciendis, earum iusto excepturi, esse corrupti ad repellat sequi voluptates dolor sint. Mollitia, magni corporis.</p>
-              </div>
+            <img src="../images/diecasting/machinig.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">طراحی و ساخت قالب</p>
+              <p class="text-sm">طراحی و ساخت قطعات استاندارد قالب در واحد طراحی و ساخت قالب و توسط پرسنل مجرب و متخصص
+                شرکت سیمین صنعت کوشا انجام می گیرد . </p>
+            </div>
           </div>
           <!-- unitImagesContainer diecasting  unitImages image6 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/diecasting/sang.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text ">John Doe</p>
-                <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius aperiam mollitia ducimus aut doloremque, reiciendis, earum iusto excepturi, esse corrupti ad repellat sequi voluptates dolor sint. Mollitia, magni corporis.</p>
-              </div>
+            <img src="../images/diecasting/sang.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg"> سنگ تخت مغناطیس آذرخش مدل SPD40</p>
+              <p class="text-sm">ابعاد میز ماشین : 1000*400mm محصول کشور لهستان </p>
+            </div>
           </div>
           <!-- unitImagesContainer diecasting  unitImages image7 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/diecasting/soloon.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text ">John Doe</p>
-                <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius aperiam mollitia ducimus aut doloremque, reiciendis, earum iusto excepturi, esse corrupti ad repellat sequi voluptates dolor sint. Mollitia, magni corporis.</p>
-              </div>
+            <img src="../images/diecasting/soloon.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">ماشین کاری</p>
+              <p class="text-sm"> ماشینکاری 2D & 3D قطعات قالب برروی ماشین های فرز CNC با رعایت دقت بالا صورت می گیرد
+              </p>
+            </div>
           </div>
           <!-- unitImagesContainer diecasting  unitImages image8 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/diecasting/wirecut1.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text ">John Doe</p>
-                <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius aperiam mollitia ducimus aut doloremque, reiciendis, earum iusto excepturi, esse corrupti ad repellat sequi voluptates dolor sint. Mollitia, magni corporis.</p>
-              </div>
+            <img src="../images/diecasting/wirecut1.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg"> وایرکات charmilles مدل ROBOFIL 2030 TWSI </p>
+              <p class="text-sm">ابعاد کارگیر ماشین : 400*200*150 mm دقت ماشین : 0.001mm محصول کشور سوئیس </p>
+            </div>
           </div>
           <!-- unitImagesContainer diecasting  unitImages image9 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/diecasting/wirecut2.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text ">John Doe</p>
-                <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius aperiam mollitia ducimus aut doloremque, reiciendis, earum iusto excepturi, esse corrupti ad repellat sequi voluptates dolor sint. Mollitia, magni corporis.</p>
-              </div>
+            <img src="../images/diecasting/wirecut2.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg"> وایرکات charmilles مدل 2060 SI ROBOFIL </p>
+              <p class="text-sm">ابعاد کارگیر ماشین : 400*400*200 mm دقت ماشین : 0.003mm محصول کشور سوئیس </p>
+            </div>
           </div>
           <!-- unitImagesContainer diecasting  unitImages image10 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/diecasting/wirecut3.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text ">John Doe</p>
-                <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius aperiam mollitia ducimus aut doloremque, reiciendis, earum iusto excepturi, esse corrupti ad repellat sequi voluptates dolor sint. Mollitia, magni corporis.</p>
-              </div>
+            <img src="../images/diecasting/wirecut3.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">قالب های پروگرسیو</p>
+              <p class="text-sm">با توجه به الزام و رعایت دقت بالا در ساخت قطعات قالبهای پروگرسیو ، انجام این فرایند با
+                بهره گیری از بروزترین نرم افزارهای مرتبط توسط وایرکاتهای موجود در شرکت سیمین صنعت کوشا صورت می گیرد </p>
+            </div>
           </div>
           <!-- unitImagesContainer diecasting  unitImages image11 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block ">
-              <img src="../images/diecasting/wirecut4.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text ">John Doe</p>
-                <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius aperiam mollitia ducimus aut doloremque, reiciendis, earum iusto excepturi, esse corrupti ad repellat sequi voluptates dolor sint. Mollitia, magni corporis.</p>
-              </div>
+            <img src="../images/diecasting/saloon2.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">توانایی مجموعه قالب سازی</p>
+              <p class="text-sm">کلیه مراحل ساخت قالب از فاز طراحی قالب تا مرحله TRY OUT و اخذ قطعه OFF TOOL در واحد
+                طراحی و ساخت قالب شرکت سیمین صنعت کوشا صورت می گیرد . </p>
+            </div>
           </div>
           <!-- unitImagesContainer diecasting  unitImages image12 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block ">
-            <img src="../images/diecasting/wirecut5.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-            <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-              <p class="text ">John Doe</p>
-              <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius aperiam mollitia ducimus aut doloremque, reiciendis, earum iusto excepturi, esse corrupti ad repellat sequi voluptates dolor sint. Mollitia, magni corporis.</p>
+            <img src="../images/diecasting/BAOMA.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg"> وایرکات BAOMA مدل BM 120*100 </p>
+              <p class="text-sm">ابعاد کارگیر ماشین : 1200*1000*1000 mm دقت ماشین : 0.005mmمحصول کشور چین </p>
             </div>
+          </div>
         </div>
       </div>
-  </div>
 
 
-  <!-- unitImagesContainer pressing -->
-  <div class="p-4 mb-4" id="pressingg">
-    <!--unitImagesContainer pressing  unitName -->
-    <p class="border-b-2 pb-1 font-bold text-base mb-2 border-sisakoLightBlue text-sisakoDarkBlue">واحد پرسکاری</p>
-    <!-- unitImagesContainer pressing  unitImages -->
-      <div class="columns-xs ">
-        <!-- unitImagesContainer pressing  unitImages image1-->
+      <!-- unitImagesContainer pressing -->
+      <div class="p-4 mb-4" id="pressingg">
+        <!--unitImagesContainer pressing  unitName -->
+        <p class="border-b-2 pb-1 font-bold text-base mb-2 border-sisakoLightBlue text-sisakoDarkBlue">واحد پرسکاری</p>
+        <!-- unitImagesContainer pressing  unitImages -->
+        <div class="columns-xs ">
+          <!-- unitImagesContainer pressing  unitImages image1-->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/pressing/1200Ton.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">پرس 1200 تن هیدرولیک</p>
-                <p class="text-sm">قابلیت تولید قالب های کشش عمیق و فرم تا تناژ جک بالای 1200 تن و جک زیر 250 تن را دارد و نیز تنظیم کورس به صورت الکترونیکی انجام می شود </p>
-              </div>
+            <img src="../images/pressing/1200Ton.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">پرس 1200 تن هیدرولیک</p>
+              <p class="text-sm">قابلیت تولید قالب های کشش عمیق و فرم تا تناژ جک بالای 1200 تن و جک زیر 250 تن را دارد و
+                تنظیم کورس به صورت الکترونیکی انجام می شود </p>
+            </div>
           </div>
           <!-- unitImagesContainer pressing  unitImages image2 -->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/pressing/125TonChinese.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">پرس 125 تن ضربه ای World Group</p>
-                <p class="text-sm">مناسب جهت قالب های پروگرسیو و مرحله ای دارای نمایشگر زاویه کورس آنلاین , مجهز به رول بازکن و فیدر الکترونیکی با دقت 0.01میلی متر و عرض تا 50 سانتی متر, باردهی تا دقت 0.1میلی متر</p>
-              </div>
+            <img src="../images/pressing/125TonChinese.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">پرس 125 تن ضربه ای World Group</p>
+              <p class="text-sm">مناسب جهت قالب های پروگرسیو و مرحله ای دارای نمایشگر زاویه کورس آنلاین , مجهز به رول
+                بازکن و فیدر الکترونیکی با دقت 0.01میلی متر و عرض تا 50 سانتی متر, باردهی تا دقت 0.1میلی متر</p>
+            </div>
           </div>
           <!-- unitImagesContainer pressing  unitImages image3 -->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/pressing/160TonChinese.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">پرس 160 تن ضربه ای World Group</p>
-                <p class="text-sm">مناسب جهت قالب های پروگرسیو و مرحله ای دارای نمایشگر زاویه کورس آنلاین , مجهز به رول بازکن و فیدر الکترونیکی با دقت 0.01میلی متر و عرض تا 70 سانتی متر, باردهی تا دقت 0.1میلی متر</p>
-              </div>
+            <img src="../images/pressing/160TonChinese.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">پرس 160 تن ضربه ای World Group</p>
+              <p class="text-sm">مناسب جهت قالب های پروگرسیو و مرحله ای دارای نمایشگر زاویه کورس آنلاین , مجهز به رول
+                بازکن و فیدر الکترونیکی با دقت 0.01میلی متر و عرض تا 70 سانتی متر, باردهی تا دقت 0.1میلی متر</p>
+            </div>
           </div>
           <!-- unitImagesContainer pressing  unitImages image4 -->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/pressing/160Tonchinese2.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">  پرس های ضربه ای World Group </p>
-                <p class="text-sm">این پرس ها با داشتن کلاچ wet و توازی فک با دقت 0.01 میلی متر قابلیت بستن قالب های نیازمند به دقت بالا و به صورت خطی
-                  را دارند.
-                  </p>
-              </div>
+            <img src="../images/pressing/160Tonchinese2.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg"> پرس های ضربه ای World Group </p>
+              <p class="text-sm">این پرس ها با داشتن کلاچ wet و توازی فک با دقت 0.01 میلی متر قابلیت بستن قالب های
+                نیازمند به دقت بالا و به صورت خطی
+                را دارند.
+              </p>
+            </div>
           </div>
           <!-- unitImagesContainer pressing  unitImages image5 -->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/pressing/200TonKhavar.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">پرس 200 تن خاور پرس</p>
-                <p class="text-sm">مناسب جهت قالب های پروگرسیو و مرحله ای دارای نمایشگر زاویه کورس آنلاین , مجهز به رول بازکن و فیدر الکترونیکی با دقت 0.1میلی متر و عرض تا 50 سانتی متر, باردهی تا دقت 0.1میلی متر</p>
-              </div>
+            <img src="../images/pressing/200TonKhavar.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">پرس 200 تن خاور پرس</p>
+              <p class="text-sm">مناسب جهت قالب های پروگرسیو و مرحله ای دارای نمایشگر زاویه کورس آنلاین , مجهز به رول
+                بازکن و فیدر الکترونیکی با دقت 0.1میلی متر و عرض تا 50 سانتی متر, باردهی تا دقت 0.1میلی متر</p>
+            </div>
           </div>
           <!-- unitImagesContainer pressing  unitImages image6 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/pressing/20220118_144755.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">رول باز کن World Group</p>
-                <p class="text-sm">قابلیت بازکردن رول های تا عرض 70 سانتی متر و وزن 1.5 تن را دارد</p>
-              </div>
+            <img src="../images/pressing/20220118_144755.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">رول باز کن World Group</p>
+              <p class="text-sm">قابلیت بازکردن رول های تا عرض 70 سانتی متر و وزن 1.5 تن را دارد</p>
+            </div>
           </div>
           <!-- unitImagesContainer pressing  unitImages image7 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/pressing/250TonKhavar.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg"> پرس 250 تن هیدرولیک خاور پرس</p>
-                <p class="text-sm">قابلیت تولید قالب های کشش عمیق و فرم تا تناژ جک بالای 250 تن و جک زیر 50 تن را دارد </p>
-              </div>
+            <img src="../images/pressing/250TonKhavar.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg"> پرس 250 تن هیدرولیک خاور پرس</p>
+              <p class="text-sm">قابلیت تولید قالب های کشش عمیق و فرم تا تناژ جک بالای 250 تن و جک زیر 50 تن را دارد
+              </p>
+            </div>
           </div>
           <!-- unitImagesContainer pressing  unitImages image8 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/pressing/400TonChinese.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">پرس 400 تن ضربه ای World Group</p>
-                <p class="text-sm">مناسب جهت قالب های پروگرسیو و مرحله ای دارای نمایشگر زاویه کورس آنلاین , مجهز به رول بازکن و فیدر الکترونیکی با دقت 0.01میلی متر و عرض تا 70 سانتی متر, باردهی تا دقت 0.01میلی متر</p>
-              </div>
+            <img src="../images/pressing/400TonChinese.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">پرس 400 تن ضربه ای World Group</p>
+              <p class="text-sm">مناسب جهت قالب های پروگرسیو و مرحله ای دارای نمایشگر زاویه کورس آنلاین , مجهز به رول
+                بازکن و فیدر الکترونیکی با دقت 0.01میلی متر و عرض تا 70 سانتی متر, باردهی تا دقت 0.01میلی متر</p>
+            </div>
           </div>
           <!-- unitImagesContainer pressing  unitImages image9 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/pressing/800TonNagafi.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">پرس 800 تن هیدولیک</p>
-                <p class="text-sm">قابلیت تولید قالب های کشش عمیق و فرم تا تناژ جک بالای 800 تن و جک زیر 200 تن را دارد </p>
-              </div>
+            <img src="../images/pressing/800TonNagafi.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">پرس 800 تن هیدولیک</p>
+              <p class="text-sm">قابلیت تولید قالب های کشش عمیق و فرم تا تناژ جک بالای 800 تن و جک زیر 200 تن را دارد
+              </p>
+            </div>
           </div>
           <!-- unitImagesContainer pressing  unitImages image10 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/pressing/khavars.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg"> پرس های ضربه ای خاور پرس  </p>
-                <p class="text-sm">شرکت از پرس های ضربه ای و هیدرولیک خاور پرس  از تناژ 40 الی 200 جهت راه اندازی تولید خود استفاده می کند که طول عمر این پرس ها به طور میانگین کمتر از 5 سال می باشد.</p>
-              </div>
+            <img src="../images/pressing/khavars.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg"> پرس های ضربه ای خاور پرس </p>
+              <p class="text-sm">شرکت از پرس های ضربه ای و هیدرولیک خاور پرس از تناژ 40 الی 200 جهت راه اندازی تولیدات
+                خود استفاده می کند که طول عمر این پرس ها به طور میانگین کمتر از 5 سال می باشد.</p>
+            </div>
           </div>
           <!-- unitImagesContainer pressing  unitImages image11 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block ">
-              <img src="../images/pressing/saloon1.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">پرس های خاور پرس</p>
-                <p class="text-sm">شرکت از پرس های ضربه ای و هیدرولیک خاور پرس  از تناژ 40 الی 200 جهت راه اندازی تولید خود استفاده می کند که طول عمر این پرس ها به طور میانگین کمتر از 5 سال می باشد.</p>
-              </div>
+            <img src="../images/pressing/saloon1.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">پرس های خاور پرس</p>
+              <p class="text-sm">شرکت از پرس های ضربه ای و هیدرولیک خاور پرس از تناژ 40 الی 200 جهت راه اندازی تولیدات
+                خود استفاده می کند که طول عمر این پرس ها به طور میانگین کمتر از 5 سال می باشد.</p>
+            </div>
           </div>
           <!-- unitImagesContainer pressing  unitImages image12 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block ">
-            <img src="../images/pressing/saloon2.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-            <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+            <img src="../images/pressing/saloon2.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
               <p class="text-lg ">سالن پرسکاری</p>
-              <p class="text-sm">در این سالن پرس های هیدرولیک از 60 الی 1200 تن و پرس های ضربه ای از 25 الی 400 تن, جهت تولید انواع قطعات فلزی موجود می باشد.</p>
+              <p class="text-sm">در این سالن پرس های هیدرولیک از 60 الی 1200 تن و پرس های ضربه ای از 25 الی 400 تن, جهت
+                تولید انواع قطعات فلزی موجود می باشد.</p>
             </div>
+          </div>
         </div>
       </div>
-  </div>
 
 
-  <!--unitImagesContainer Assembly-->
-  <div class="p-4 mb-4" id="assemblyy">
-    <!--unitImagesContainer Assembly  unitName -->
-    <p class="border-b-2  pb-1 font-bold text-base mb-2 border-sisakoLightBlue text-sisakoDarkBlue">واحد مونتاژ</p>
-    <!-- unitImagesContainer Assembly  unitImages -->
-      <div class="columns-xs ">
-        <!-- unitImagesContainer Assembly  unitImages image1-->
+      <!--unitImagesContainer Assembly-->
+      <div class="p-4 mb-4" id="assemblyy">
+        <!--unitImagesContainer Assembly  unitName -->
+        <p class="border-b-2  pb-1 font-bold text-base mb-2 border-sisakoLightBlue text-sisakoDarkBlue">واحد مونتاژ</p>
+        <!-- unitImagesContainer Assembly  unitImages -->
+        <div class="columns-xs ">
+          <!-- unitImagesContainer Assembly  unitImages image1-->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/welding/saloon.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">سالن مونتاژ جوش مقاومتی</p>
-                <p class="text-sm">در این سالن ده دستگاه پرس جوش با توان های مختلف از 150 کیلو ولت آمپر تا 400 کیلو ولت آمپر, جهت جوش انواع قطعات فلزی از جمله:جوش ورق به ورق , مهره جوش, پیچ جوش و ... وجود دارد.</p>
-              </div>
+            <img src="../images/welding/saloon.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">سالن مونتاژ جوش مقاومتی</p>
+              <p class="text-sm">در این سالن ده دستگاه پرس جوش با توان های مختلف از 150 کیلو ولت آمپر تا 400 کیلو ولت
+                آمپر, جهت جوش انواع قطعات فلزی از جمله:جوش ورق به ورق , مهره جوش, پیچ جوش و ... وجود دارد.</p>
+            </div>
           </div>
           <!-- unitImagesContainer Assembly  unitImages image2 -->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/welding/welding.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">سالن مونتاژ جوش CO2</p>
-                <p class="text-sm">در این سالن سیزده دستگاه دستگاه جوش CO2 با توان های مختلف از 300 آمپر تا 500 آمپر, جهت جوش انواع قطعات فلزی با ضخامت های مختلف وجود دارد</p>
-              </div>
+            <img src="../images/welding/welding.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">سالن مونتاژ جوش CO2</p>
+              <p class="text-sm">در این سالن سیزده دستگاه جوش CO2 با توان های مختلف از 300 آمپر تا 500 آمپر, جهت جوش
+                انواع قطعات فلزی با ضخامت های مختلف وجود دارد</p>
+            </div>
           </div>
           <!-- unitImagesContainer Assembly  unitImages image3 -->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/welding/fotoshop.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">پروژه های درون سازمانی</p>
-                <p class="text-sm">با توجه به وجود انواع دستگاه های جوش و برش, پروژه های درون سازمانی از قبیل: ساخت پالت, انبار, مخازن, و ماشین سازی با توجه به نیاز شرکت انجام می گردد. </p>
-              </div>
+            <img src="../images/welding/fotoshop.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">پروژه های درون سازمانی</p>
+              <p class="text-sm">با توجه به وجود انواع دستگاه های جوش و برش, پروژه های درون سازمانی از قبیل: ساخت پالت,
+                انبار, مخازن, و ماشین سازی با توجه به نیاز شرکت انجام می گردد. </p>
+            </div>
           </div>
           <!-- unitImagesContainer Assembly  unitImages image4 -->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/welding/gun.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">سالن مونتاژ جوش مقاومتی آویز</p>
-                <p class="text-sm">در این سالن شش دستگاه گان جوش ترانس سر خود با توان های مختلف از 30 کیلو ولت آمپر الی 60 کیلو ولت آمپر جهت مونتاژ انواع قطعات فلزی و مجموعه سازی وجود دارد.</p>
-              </div>
+            <img src="../images/welding/gun.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">سالن مونتاژ جوش مقاومتی آویز</p>
+              <p class="text-sm">در این سالن شش دستگاه گان جوش ترانس سر خود با توان های مختلف از 30 کیلو ولت آمپر الی 60
+                کیلو ولت آمپر جهت مونتاژ انواع قطعات فلزی و مجموعه سازی وجود دارد.</p>
+            </div>
           </div>
           <!-- unitImagesContainer Assembly  unitImages image5 -->
           <div class="container relative group bg-blue-400 rounded-md">
-              <img src="../images/welding/pressjoosh.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">سالن مونتاژ جوش مقاومتی</p>
-                <p class="text-sm">در این سالن ده دستگاه پرس جوش با توان های مختلف از 150 کیلو ولت آمپر تا 400 کیلو ولت آمپر وجود دارد </p>
-              </div>
+            <img src="../images/welding/pressjoosh.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">سالن مونتاژ جوش مقاومتی</p>
+              <p class="text-sm">در این سالن ده دستگاه پرس جوش با توان های مختلف از 150 کیلو ولت آمپر تا 400 کیلو ولت
+                آمپر وجود دارد </p>
+            </div>
           </div>
           <!-- unitImagesContainer Assembly  unitImages image6 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/welding/qc.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">واحد کنترل کیفیت</p>
-                <p class="text-sm">در این واحد ابزارها و فیکسچرهای کنترلی و نیز تمامی نمونه شاهد های محصولات تولیدی , به تفکیک مراحل نگهداری می شود. محصولات در زمان شروع, حین و پایان تولید توسط بازرسین کنترل کیفیت با توجه به دستورالعمل های کنترلی بازرسی می گردد. </p>
-              </div>
+            <img src="../images/welding/qc.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">واحد کنترل کیفیت</p>
+              <p class="text-sm">در این واحد ابزارها و فیکسچرهای کنترلی و نیز تمامی نمونه شاهد های محصولات تولیدی , به
+                تفکیک مراحل نگهداری می شود. محصولات در زمان شروع, حین و پایان تولید توسط بازرسین کنترل کیفیت با توجه به
+                دستورالعمل های کنترلی بازرسی می گردد. </p>
+            </div>
           </div>
           <!-- unitImagesContainer Assembly  unitImages image7 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/welding/amouzesh.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">واحد آموزش و جلسات</p>
-                <p class="text-sm">برگزاری کلاس های آموزشی و همچنین جلسات درون سازمانی و برون سازمانی در این واحد برگزار می شود</p>
-              </div>
+            <img src="../images/welding/amouzesh.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">واحد آموزش و جلسات</p>
+              <p class="text-sm">برگزاری کلاس های آموزشی و همچنین جلسات درون سازمانی و برون سازمانی در این واحد برگزار
+                می شود</p>
+            </div>
           </div>
           <!-- unitImagesContainer Assembly  unitImages image8 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/welding/saloon2.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">سالن مونتاژ</p>
-                <p class="text-sm">مجموعه سازی و مونتاژ قطعات تولیدی شرکت با توجه به نیاز مشتری در این سالن انجام می شود.</p>
-              </div>
+            <img src="../images/welding/saloon2.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">سالن مونتاژ</p>
+              <p class="text-sm">مجموعه سازی و مونتاژ قطعات تولیدی شرکت با توجه به نیاز مشتری در این سالن انجام می شود.
+              </p>
+            </div>
           </div>
           <!-- unitImagesContainer Assembly  unitImages image9 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/welding/saloon3.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">سالن مونتاژ جوش مقاومتی</p>
-                <p class="text-sm">در این سالن ده دستگاه پرس جوش با توان های مختلف از 150 کیلو ولت آمپر تا 400 کیلو ولت آمپر, جهت جوش انواع قطعات فلزی از جمله:جوش ورق به ورق , مهره جوش, پیچ جوش و ... وجود دارد.</p>
-              </div>
+            <img src="../images/welding/saloon3.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">سالن مونتاژ جوش مقاومتی</p>
+              <p class="text-sm">در این سالن ده دستگاه پرس جوش با توان های مختلف از 150 کیلو ولت آمپر تا 400 کیلو ولت
+                آمپر, جهت جوش انواع قطعات فلزی از جمله:جوش ورق به ورق , مهره جوش, پیچ جوش و ... وجود دارد.</p>
+            </div>
           </div>
           <!-- unitImagesContainer Assembly  unitImages image10 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block">
-              <img src="../images/welding/vitrin.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">برخی از محصولات تولیدی</p>
-                <p class="text-sm">تولید انواع کاورهای کلاچ, متالیک پلیت, گاید واشر, قطعات مربوط به مجموعه کمک فنر انواع خودروها, انواع دسته موتورها, انواع کفشک لنت ترمز و قطعات لوازم خانگی و...</p>
-              </div>
+            <img src="../images/welding/vitrin.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">برخی از محصولات تولیدی</p>
+              <p class="text-sm">تولید انواع کاورهای کلاچ, متالیک پلیت, گاید واشر, قطعات مربوط به مجموعه کمک فنر انواع
+                خودروها, انواع دسته موتورها, انواع کفشک لنت ترمز و قطعات لوازم خانگی و...</p>
+            </div>
           </div>
           <!-- unitImagesContainer Assembly  unitImages image11 -->
           <div class="container relative group bg-blue-400 rounded-md hidden md:block ">
-              <img src="../images/welding/anbar.webp" alt="Avatar" class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
-              <div class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
-                <p class="text-lg">واحد انبار</p>
-                <p class="text-sm">محل نگهداری اقلام مصرفی و یدکی و نیز کنترل و ثبت کلیه ورود و خروج های مواد اولیه, نیم ساخته و نهایی و تجهیزات</p>
-              </div>
+            <img src="../images/welding/anbar.webp" alt="Avatar"
+              class="rounded-md mb-2  group-hover:opacity-20 w-full h-full">
+            <div
+              class="flex flex-col middle items-center justify-center opacity-0 absolute inset-5 text-center transition-all duration-300 group-hover:opacity-100">
+              <p class="text-lg">واحد انبار</p>
+              <p class="text-sm">محل نگهداری اقلام مصرفی و یدکی و نیز کنترل و ثبت کلیه ورود و خروج های مواد اولیه, نیم
+                ساخته و نهایی و تجهیزات</p>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
 
 
 
@@ -865,62 +1285,72 @@
 
 
 
-<!-- footer -->
-<div class="flex justify-center items-center relative -bottom-7 z-10">
-  <!-- footer links -->
-  <div class="flex gap-x-8 items-center justify-center">
-    <!-- footer links -->
-      <div class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring   ring-cyan-500 hover:animate-shake hover:duration-500">
-          <a target="_blank" href="https://www.instagram.com/_sisako/"><img src="../images/logos/icons8-instagram-96.png" /></a>
+    <!-- footer -->
+    <div class="flex justify-center items-center relative -bottom-7 z-10">
+      <!-- footer links -->
+      <div class="flex gap-x-8 items-center justify-center">
+        <!-- footer links -->
+        <div
+          class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring   ring-cyan-500 hover:animate-shake hover:duration-500">
+          <a target="_blank" href="https://www.instagram.com/_sisako/"><img
+              src="../images/logos/icons8-instagram-96.png" /></a>
+        </div>
+        <div
+          class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
+          <a target="_blank" href="https://wa.link/r3gt39"><img src="../images/logos/icons8-whatsapp-96.png" />
+        </div></a>
+        <div
+          class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
+          <a target="_blank" href="https://t.me/sisako2002"><img src="../images/logos/icons8-telegram-app-96.png" />
+        </div></a>
+        <div
+          class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
+          <a href="mailto:sisako2002@gmail.com"><img src="../images/logos/icons8-gmail-96.png" />
+        </div></a>
       </div>
-      <div class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
-        <a target="_blank" href="https://wa.link/r3gt39"><img src="../images/logos/icons8-whatsapp-96.png" /></div></a>
-      <div  class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
-        <a target="_blank" href="https://t.me/sisako2002"><img src="../images/logos/icons8-telegram-app-96.png" /></div></a>
-      <div class="cursor-pointer p-1 bg-transparent  drop-shadow-lg shadow-lg shadow-cyan-500 w-16 h-16 rounded-full ring  ring-cyan-500 hover:animate-shake hover:duration-500">
-        <a href="mailto:sisako2002@gmail.com"><img src="../images/logos/icons8-gmail-96.png" /></div></a>
-  </div>
-</div>
-<div class="grid lg:grid-cols-2 border-2 w-full relative p-2 container mx-auto shadow-lg shadow-cyan-600 drop-shadow-lg rounded-md bg-sisakoGray">
-  <div class="flex flex-col gap-y-6 mb-10">
-      <div class="flex justify-start items-center gap-x-2 mt-15">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-sisakoDarkBlue stroke-2" fill="none" stroke="blue" stroke-width="2"  viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+    </div>
+    <div
+      class="grid lg:grid-cols-2 border-2 w-full relative p-2 container mx-auto shadow-lg shadow-cyan-600 drop-shadow-lg rounded-md bg-sisakoGray">
+      <div class="flex flex-col gap-y-6 mb-10">
+        <div class="flex justify-start items-center gap-x-2 mt-15">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-sisakoDarkBlue stroke-2" fill="none"
+            stroke="blue" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
           </svg>
           <p class="select-all">البرز - فردیس - شهرک صنعتی سیمین دشت - خیابان هشتم غربی - پلاک 146</p>
-      </div>
-      <div class="flex justify-start items-center gap-x-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-sisakoDarkBlue  stroke-2" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </div>
+        <div class="flex justify-start items-center gap-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-sisakoDarkBlue  stroke-2" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
           </svg>
-          <p class="select-all">026-357841</p>
-      </div>
-      <div class="flex justify-start items-center gap-x-2">
+          <p class="select-all">026-36670541</p>
+        </div>
+        <div class="flex justify-start items-center gap-x-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-sisakoDarkBlue" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
           </svg>
-          <p class="select-all">026-35748741</p>
-      </div>
-      <div class="flex justify-start items-center gap-x-2">
+          <p class="select-all">026-36670541</p>
+        </div>
+        <div class="flex justify-start items-center gap-x-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-sisakoDarkBlue" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
           <p class="select-all">sisako2002@gmail.com</p>
+        </div>
       </div>
-  </div>
-  <div class="flex justify-center items-center p-2">
-      <iframe
+      <div class="flex justify-center items-center p-2">
+        <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.904851734551!2d51.02570661520215!3d35.75314333363218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8deb57c777f03d%3A0x94bc3e1f551647a5!2ssimin%20sanat%20kosha!5e0!3m2!1sen!2s!4v1655706500848!5m2!1sen!2s"
           class="w-full h-96 rounded-md shadow-md shadow-cyan-400"></iframe>
-  </div>
-</div>
+      </div>
+    </div>
 
 
 
@@ -939,9 +1369,10 @@
     <!-- Alpine js -->
     <script src="//unpkg.com/alpinejs" defer></script>
     <!-- swiper js -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>       
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- swiper js for product section -->
     <script src="../js/productsSwiper.js"></script>
     <script src="../js/onlaod.js"></script>
 </body>
+
 </html>
